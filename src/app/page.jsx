@@ -47,7 +47,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with companies of all types
+            We’ve collaborated with businesses from various industries.
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -59,7 +59,7 @@ function Clients() {
             {clients.map(([client, logo]) => (
               <li key={client}>
                 <FadeIn>
-                  <Image src={logo} alt={client} unoptimized />
+                  <Image src={logo} width={220} alt={client} unoptimized />
                 </FadeIn>
               </li>
             ))}
