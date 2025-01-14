@@ -18,17 +18,27 @@ import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
+import logoArchitects from '@/images/logos/architects.png'
+import logoEcommerce from '@/images/logos/ecommerce.png'
+import logoEducation from '@/images/logos/education.png'
+import logoGovernments from '@/images/logos/governments.png'
+import logoHotels from '@/images/logos/hotels.png'
+import logoRealEstate from '@/images/logos/real-estate.png'
+import logoRestaurants from '@/images/logos/restaurants.png'
+import logoStartups from '@/images/logos/startups.png'
+
+
 import { loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
-  ['Phobia', logoPhobiaLight],
-  ['Family Fund', logoFamilyFund],
-  ['Unseal', logoUnseal],
-  ['Mail Smirk', logoMailSmirk],
-  ['Home Work', logoHomeWork],
-  ['Green Life', logoGreenLife],
-  ['Bright Path', logoBrightPath],
-  ['North Adventures', logoNorthAdventures],
+  ['Hotels', logoHotels],
+  ['Governments', logoGovernments],
+  ['Startups', logoStartups],
+  ['Real Estate', logoRealEstate],
+  ['E-commerce', logoEcommerce],
+  ['Restaurants', logoRestaurants],
+  ['Education', logoEducation],
+  ['Architects', logoArchitects],
 ]
 
 function Clients() {
@@ -37,7 +47,7 @@ function Clients() {
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve worked with hundreds of amazing people
+            We’ve worked with companies of all types
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -183,7 +193,7 @@ export default async function Home() {
             Creative studio proudly based in Morocco 🇲🇦
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            We create unique designs and build powerful technology solutions to help bring ideas to life.
+            We are a team of passionate designers and developers, blending creativity and technology to craft meaningful experiences. Based in Morocco, we bring unique ideas to life, inspired by innovation and a dedication to excellence.
           </p>
         </FadeIn>
       </Container>
