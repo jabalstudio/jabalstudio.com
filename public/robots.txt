@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.jabalstudio.com
+
+# Sitemaps
+Sitemap: https://www.jabalstudio.com/sitemap.xml
+Sitemap: https://www.votre-site.com/custom-sitemap-1.xml
