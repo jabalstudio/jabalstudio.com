@@ -47,7 +47,7 @@ export function Contact({ invert = false, ...props }) {
         Hamza Ellouizi
       </strong>
       <br />
-      CEO & Sales Manager
+      Sales Manager
       <br />
       +212 6 61 23 45 67
     </div>

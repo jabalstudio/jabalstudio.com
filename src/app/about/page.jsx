@@ -58,19 +58,14 @@ const team = [
     title: 'Leadership',
     people: [
       {
-        name: 'Leslie Alexander',
-        role: 'Co-Founder / CEO',
+        name: 'Ibrahim Adlani',
+        role: 'CEO & Technical Director',
         image: { src: imageLeslieAlexander },
       },
       {
-        name: 'Michael Foster',
-        role: 'Co-Founder / CTO',
+        name: 'Hamza Ellouizi',
+        role: 'Sales Manager',
         image: { src: imageMichaelFoster },
-      },
-      {
-        name: 'Dries Vincent',
-        role: 'Partner & Business Relations',
-        image: { src: imageDriesVincent },
       },
     ],
   },
@@ -78,50 +73,26 @@ const team = [
     title: 'Team',
     people: [
       {
-        name: 'Chelsea Hagon',
-        role: 'Senior Developer',
-        image: { src: imageChelseaHagon },
-      },
-      {
-        name: 'Emma Dorsey',
-        role: 'Senior Designer',
-        image: { src: imageEmmaDorsey },
-      },
-      {
         name: 'Leonard Krasner',
-        role: 'VP, User Experience',
+        role: 'Creative Director',
         image: { src: imageLeonardKrasner },
       },
       {
         name: 'Blake Reid',
-        role: 'Junior Copywriter',
+        role: 'Software Engineer',
         image: { src: imageBlakeReid },
       },
       {
-        name: 'Kathryn Murphy',
-        role: 'VP, Human Resources',
-        image: { src: imageKathrynMurphy },
-      },
-      {
-        name: 'Whitney Francis',
-        role: 'Content Specialist',
-        image: { src: imageWhitneyFrancis },
-      },
-      {
         name: 'Jeffrey Webb',
-        role: 'Account Coordinator',
+        role: 'UX/UI Designer',
         image: { src: imageJeffreyWebb },
       },
       {
         name: 'Benjamin Russel',
-        role: 'Senior Developer',
+        role: 'Software Engineer, Intern',
         image: { src: imageBenjaminRussel },
       },
-      {
-        name: 'Angela Fisher',
-        role: 'Front-end Developer',
-        image: { src: imageAngelaFisher },
-      },
+
     ],
   },
 ]
@@ -210,7 +181,7 @@ export default async function About() {
         <StatList>
           <StatListItem value="6" label="Qualified talents" />
           <StatListItem value="13" label="Happy clients" />
-          <StatListItem value="$1,5M" label="Line of code shipped" />
+          <StatListItem value="1,5M" label="Line of code shipped" />
         </StatList>
       </Container>
 
