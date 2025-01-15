@@ -17,23 +17,40 @@ function Office({ name, children, invert = false }) {
   )
 }
 
+
+
 export function Offices({ invert = false, ...props }) {
   return (
     <ul role="list" {...props}>
       <li>
-        <Office name="Sefrou" invert={invert}>
+        <Office name="Fez" invert={invert}>
           2 rue Lemqasem
           <br />
-          31000, Sefrou, Morroco
-        </Office>
-      </li>
-      <li>
-        <Office name="Billund" invert={invert}>
-          24 Lego Allé
-          <br />
-          7190, Billund, Cergy
+          30000 Fez, Morroco
+
         </Office>
       </li>
     </ul>
   )
 }
+
+export function Contact({ invert = false, ...props }) {
+  return (
+
+    <div
+      className={clsx(
+        'text-sm not-italic mt-6',
+        invert ? 'text-neutral-300' : 'text-neutral-600',
+      )}
+    >
+      <strong className={invert ? 'text-white' : 'text-neutral-950'}>
+        Hamza Ellouizi
+      </strong>
+      <br />
+      CEO & Sales Manager
+      <br />
+      +212 6 61 23 45 67
+    </div>
+  )
+}
+

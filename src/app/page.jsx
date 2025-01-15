@@ -27,8 +27,15 @@ import logoRealEstate from '@/images/logos/real-estate.png'
 import logoRestaurants from '@/images/logos/restaurants.png'
 import logoStartups from '@/images/logos/startups.png'
 
+import { GridList, GridListItem } from '@/components/GridList'
+import { blogArticles } from '@/lib/mdx'
+import { PageLinks } from '@/components/PageLinks'
+
+
 
 import { loadCaseStudies } from '@/lib/mdx'
+
+
 
 const clients = [
   ['Hotels', logoHotels],
@@ -74,13 +81,11 @@ function CaseStudies({ caseStudies }) {
   return (
     <>
       <SectionIntro
-        title="Harnessing technology for a brighter future"
+        title="Empowering innovation through technology"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
+          We harness the power of technology to create solutions that drive progress, inspire change, and transform industries.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -126,21 +131,53 @@ function CaseStudies({ caseStudies }) {
   )
 }
 
+function Culture() {
+  return (
+    <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
+      <SectionIntro
+        eyebrow="Our culture"
+        title="Balance your passion with your passion for life."
+        invert
+      >
+        <p>
+          We are a group of like-minded people who share the same core values.
+        </p>
+      </SectionIntro>
+      <Container className="mt-16">
+        <GridList>
+          <GridListItem title="Loyalty" invert>
+            Our team has been with us since the beginning because none of them
+            are allowed to have LinkedIn profiles.
+          </GridListItem>
+          <GridListItem title="Trust" invert>
+            We don’t care when our team works just as long as they are working
+            every waking second.
+          </GridListItem>
+          <GridListItem title="Compassion" invert>
+            You never know what someone is going through at home and we make
+            sure to never find out.
+          </GridListItem>
+        </GridList>
+      </Container>
+    </div>
+  )
+}
+
+
 function Services() {
   return (
     <>
       <SectionIntro
         eyebrow="Services"
-        title="We help you identify, explore and respond to new opportunities."
+        title="We help you discover, innovate, and seize new opportunities."
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          As long as those opportunities involve giving us money to re-purpose
-          old projects — we can come up with an endless number of those.
+          Our mission is to provide tailored digital solutions that empower your business to adapt, grow, and succeed in an ever-evolving landscape.
         </p>
       </SectionIntro>
       <Container className="mt-16">
-        <div className="lg:flex lg:items-center lg:justify-end">
+      <div className="lg:flex lg:items-center lg:justify-end">
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
               <StylizedImage
@@ -151,24 +188,17 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Web development">
-              We specialise in crafting beautiful, high quality marketing pages.
-              The rest of the website will be a shell that uses lorem ipsum
-              everywhere.
+            <ListItem title="Web Development">
+              We design and build stunning, responsive websites that deliver exceptional user experiences and support your business objectives.
             </ListItem>
-            <ListItem title="Application development">
-              We have a team of skilled developers who are experts in the latest
-              app frameworks, like Angular 1 and Google Web Toolkit.
+            <ListItem title="Application Development">
+              Our experienced team specializes in building scalable and efficient applications using the latest frameworks and technologies.
             </ListItem>
-            <ListItem title="E-commerce">
-              We are at the forefront of modern e-commerce development. Which
-              mainly means adding your logo to the Shopify store template we’ve
-              used for the past six years.
+            <ListItem title="E-commerce Solutions">
+              We create customized e-commerce platforms tailored to your business needs, ensuring seamless online shopping experiences.
             </ListItem>
-            <ListItem title="Custom content management">
-              At Studio we understand the importance of having a robust and
-              customised CMS. That’s why we run all of our client projects out
-              of a single, enormous Joomla instance.
+            <ListItem title="Custom Content Management Systems">
+              We develop robust, user-friendly CMS solutions that give you complete control over your content while ensuring scalability and security.
             </ListItem>
           </List>
         </div>
@@ -184,7 +214,6 @@ export const metadata = {
 
 export default async function Home() {
   let caseStudies = (await loadCaseStudies()).slice(0, 3)
-
   return (
     <>
       <Container className="mt-24 sm:mt-32 md:mt-56">
@@ -202,14 +231,13 @@ export default async function Home() {
 
       <CaseStudies caseStudies={caseStudies} />
 
-      <Testimonial
-        className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
-      >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
-      </Testimonial>
+      {/* <PageLinks
+              className="mt-24 sm:mt-32 lg:mt-40"
+              title="From the blog"
+              intro="Our team of experienced designers and developers has just one thing on their mind; working on your ideas to draw a smile on the face of your users worldwide. From conducting Brand Sprints to UX Design."
+              pages={blogArticles}
+            /> */}
+            <Culture />
 
       <Services />
 
