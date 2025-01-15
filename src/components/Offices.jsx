@@ -26,7 +26,7 @@ export function Offices({ invert = false, ...props }) {
         <Office name="Fez" invert={invert}>
           2 rue Lemqasem
           <br />
-          30000 Fez, Morroco
+          30000 Fez, Morocco
 
         </Office>
       </li>
