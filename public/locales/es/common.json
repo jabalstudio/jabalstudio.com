@@ -1,0 +1,47 @@
+{
+  "header": {
+    "title": "Estudio creativo con sede en Marruecos 🇲🇦",
+    "description": "Somos un equipo de diseñadores y desarrolladores apasionados, que combinan creatividad y tecnología para crear experiencias significativas. Con sede en Marruecos, damos vida a ideas únicas, inspiradas por la innovación y un compromiso con la excelencia."
+  },
+  "industries": {
+    "title": "Hemos colaborado con empresas de diversas industrias.",
+    "categories": ["Hoteles", "Gobiernos", "Startups", "Bienes Raíces", "E-commerce", "Restaurantes", "Educación", "Arquitectos"]
+  },
+  "innovation": {
+    "title": "Potenciando la innovación a través de la tecnología",
+    "description": "Aprovechamos el poder de la tecnología para crear soluciones que impulsan el progreso, inspiran cambios y transforman las industrias.",
+    "caseStudies": {
+      "2023": {
+        "title": "Evita los bancos, pide prestado a quienes confías",
+        "description": "FamilyFund es una plataforma de financiación colectiva para amigos y familiares, que permite a los usuarios obtener préstamos personales de su red sin pasar por una institución financiera tradicional."
+      },
+      "2022_1": {
+        "title": "Toma el control de tu salud",
+        "description": "Unseal es la primera plataforma NFT donde los usuarios pueden crear e intercambiar NFTs de sus propios registros de salud, permitiéndoles tomar el control de sus datos."
+      },
+      "2022_2": {
+        "title": "Supera tus miedos, encuentra tu pareja",
+        "description": "Encuentra el amor frente al miedo — Phobia es una aplicación de citas que conecta a los usuarios en función de sus fobias mutuas para que puedan enfrentarlas juntos."
+      }
+    }
+  },
+  "culture": {
+    "title": "Nuestra cultura",
+    "subtitle": "Guiada por la herencia, unida por valores compartidos.",
+    "description": "Nuestra cultura se inspira en las ricas tradiciones de Marruecos, combinando un compromiso con la excelencia con una profunda apreciación por la comunidad y la creatividad.",
+    "values": {
+      "hospitality": {
+        "title": "Hospitalidad",
+        "description": "Enraizados en la tradición de dar la bienvenida, cultivamos un entorno donde todos se sientan valorados y respetados."
+      },
+      "craftsmanship": {
+        "title": "Artesanía",
+        "description": "Inspirándonos en el trabajo artesanal intrincado, enfatizamos la calidad y la atención al detalle en todo lo que creamos."
+      },
+      "community": {
+        "title": "Comunidad",
+        "description": "Reflejando lazos estrechos, priorizamos la colaboración y la confianza para construir una base sólida para el éxito."
+      }
+    }
+  }
+}

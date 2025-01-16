@@ -1,0 +1,48 @@
+{
+  
+    "header": {
+      "title": "Creative studio proudly based in Morocco 🇲🇦",
+      "description": "We are a team of passionate designers and developers, blending creativity and technology to craft meaningful experiences. Based in Morocco, we bring unique ideas to life, inspired by innovation and a dedication to excellence."
+    },
+    "industries": {
+      "title": "We’ve collaborated with businesses from various industries.",
+      "categories": ["Hotels", "Governments", "Startups", "Real Estate", "E-commerce", "Restaurants", "Education", "Architects"]
+    },
+    "innovation": {
+      "title": "Empowering innovation through technology",
+      "description": "We harness the power of technology to create solutions that drive progress, inspire change, and transform industries.",
+      "caseStudies": {
+        "2023": {
+          "title": "Skip the bank, borrow from those you trust",
+          "description": "FamilyFund is a crowdfunding platform for friends and family. Allowing users to take personal loans from their network without a traditional financial institution."
+        },
+        "2022_1": {
+          "title": "Get a hold of your health",
+          "description": "Unseal is the first NFT platform where users can mint and trade NFTs of their own personal health records, allowing them to take control of their data."
+        },
+        "2022_2": {
+          "title": "Overcome your fears, find your match",
+          "description": "Findlove in the face of fear — Phobia is a dating app that matches users based on their mutual phobias so they can be scared together."
+        }
+      }
+    },
+    "culture": {
+      "title": "Our culture",
+      "subtitle": "Guided by heritage, united by shared values.",
+      "description": "Our culture is inspired by the rich traditions of Morocco, blending a commitment to excellence with a deep appreciation for community and creativity.",
+      "values": {
+        "hospitality": {
+          "title": "Hospitality",
+          "description": "Rooted in the tradition of welcoming others, we cultivate an environment where everyone feels valued and respected."
+        },
+        "craftsmanship": {
+          "title": "Craftsmanship",
+          "description": "Taking inspiration from intricate artisan work, we emphasize quality and attention to detail in everything we create."
+        },
+        "community": {
+          "title": "Community",
+          "description": "Reflecting close-knit bonds, we prioritize collaboration and trust to build a strong foundation for success."
+        }
+      }
+    }
+  }

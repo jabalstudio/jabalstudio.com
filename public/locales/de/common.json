@@ -1,0 +1,47 @@
+{
+  "header": {
+    "title": "Kreatives Studio mit Sitz in Marokko 🇲🇦",
+    "description": "Wir sind ein Team aus leidenschaftlichen Designern und Entwicklern, das Kreativität und Technologie vereint, um bedeutungsvolle Erlebnisse zu schaffen. Mit Sitz in Marokko bringen wir einzigartige Ideen zum Leben, inspiriert von Innovation und einem Engagement für Exzellenz."
+  },
+  "industries": {
+    "title": "Wir haben mit Unternehmen aus verschiedenen Branchen zusammengearbeitet.",
+    "categories": ["Hotels", "Regierungen", "Start-ups", "Immobilien", "E-Commerce", "Restaurants", "Bildung", "Architekten"]
+  },
+  "innovation": {
+    "title": "Innovation durch Technologie fördern",
+    "description": "Wir nutzen die Kraft der Technologie, um Lösungen zu schaffen, die Fortschritt vorantreiben, Veränderungen inspirieren und Branchen transformieren.",
+    "caseStudies": {
+      "2023": {
+        "title": "Umgehe die Bank, leihe von denen, denen du vertraust",
+        "description": "FamilyFund ist eine Crowdfunding-Plattform für Freunde und Familie, die es Nutzern ermöglicht, persönliche Kredite von ihrem Netzwerk zu erhalten, ohne eine traditionelle Finanzinstitution zu nutzen."
+      },
+      "2022_1": {
+        "title": "Übernimm die Kontrolle über deine Gesundheit",
+        "description": "Unseal ist die erste NFT-Plattform, auf der Nutzer NFTs ihrer eigenen Gesundheitsdaten erstellen und handeln können, um die Kontrolle über ihre Daten zu übernehmen."
+      },
+      "2022_2": {
+        "title": "Überwinde deine Ängste, finde deinen Partner",
+        "description": "Finde Liebe trotz Angst — Phobia ist eine Dating-App, die Nutzer basierend auf ihren gemeinsamen Phobien zusammenbringt, damit sie ihre Ängste gemeinsam bewältigen können."
+      }
+    }
+  },
+  "culture": {
+    "title": "Unsere Kultur",
+    "subtitle": "Geleitet von Tradition, vereint durch gemeinsame Werte.",
+    "description": "Unsere Kultur ist inspiriert von den reichen Traditionen Marokkos und verbindet ein Engagement für Exzellenz mit einer tiefen Wertschätzung für Gemeinschaft und Kreativität.",
+    "values": {
+      "hospitality": {
+        "title": "Gastfreundschaft",
+        "description": "In der Tradition der Gastfreundschaft verwurzelt, schaffen wir eine Umgebung, in der sich jeder geschätzt und respektiert fühlt."
+      },
+      "craftsmanship": {
+        "title": "Handwerkskunst",
+        "description": "Inspiriert von detailreicher Handwerkskunst legen wir Wert auf Qualität und Liebe zum Detail in allem, was wir schaffen."
+      },
+      "community": {
+        "title": "Gemeinschaft",
+        "description": "Unsere engen Bindungen spiegeln sich wider in unserer Priorisierung von Zusammenarbeit und Vertrauen, um eine starke Grundlage für Erfolg zu schaffen."
+      }
+    }
+  }
+}
