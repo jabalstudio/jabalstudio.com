@@ -30,10 +30,11 @@ import logoStartups from '@/images/logos/startups.png'
 import { GridList, GridListItem } from '@/components/GridList'
 import { blogArticles } from '@/lib/mdx'
 import { PageLinks } from '@/components/PageLinks'
-
-
-
 import { loadCaseStudies } from '@/lib/mdx'
+
+import { getDictionary } from "../[lang]/get-dictionary";
+import { Locale } from "../../../i18n-config";
+import { LocaleSwitcher } from '@/components/LocaleSwitcher'
 
 
 
@@ -48,13 +49,13 @@ const clients = [
   ['Architects', logoArchitects],
 ]
 
-function Clients() {
+async function Clients({dictionary}) {
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
-        <FadeIn className="flex items-center gap-x-8">
+        <FadeIn  className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-            We’ve collaborated with businesses from various industries.
+          {dictionary.title}
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -161,6 +162,7 @@ function Culture() {
 }
 
 
+
 function Services() {
   return (
     <>
@@ -209,22 +211,27 @@ export const metadata = {
     'We are a development studio working at the intersection of design and technology.',
 }
 
-export default async function Home() {
+
+
+export default async function Home({ params }) {
   let caseStudies = (await loadCaseStudies()).slice(0, 3)
+  const lang = (await params).lang
+  const dictionary = await getDictionary(lang);
   return (
     <>
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Creative studio proudly based in Morocco 🇲🇦
+            {dictionary.header.title}
           </h1>
+          {/* <LocaleSwitcher /> */}
           <p className="mt-6 text-xl text-neutral-600">
-            We are a team of passionate designers and developers, blending creativity and technology to craft meaningful experiences. Based in Morocco, we bring unique ideas to life, inspired by innovation and a dedication to excellence.
+            {dictionary.header.description}
           </p>
         </FadeIn>
       </Container>
 
-      <Clients />
+      <Clients dictionary={dictionary.industries}/>
 
       <CaseStudies caseStudies={caseStudies} />
 

@@ -3,9 +3,9 @@ import glob from 'fast-glob'
 async function loadEntries(directory, metaName) {
   return (
     await Promise.all(
-      (await glob('**/page.mdx', { cwd: `src/app/${directory}` })).map(
+      (await glob('**/page.mdx', { cwd: `src/app/[lang]/${directory}` })).map(
         async (filename) => {
-          let metadata = (await import(`../app/${directory}/${filename}`))[
+          let metadata = (await import(`../app/[lang]/${directory}/${filename}`))[
             metaName
           ]
           return {
