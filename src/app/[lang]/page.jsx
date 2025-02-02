@@ -38,6 +38,38 @@ import { LocaleSwitcher } from '@/components/LocaleSwitcher'
 
 
 
+export default async function Home({ params }) {
+  const lang = (await params).lang;
+  const dictionary = await getDictionary(lang);
+
+  let caseStudies = (await loadCaseStudies()).slice(0, 3);
+
+  return (
+    <>
+      <Container className="mt-24 sm:mt-32 md:mt-56">
+        <FadeIn className="max-w-3xl">
+          <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
+            {dictionary.home.hero.title}
+          </h1>
+          <p className="mt-6 text-xl text-neutral-600">
+            {dictionary.home.hero.description}
+          </p>
+        </FadeIn>
+      </Container>
+
+      <Clients dictionary={dictionary.home.industries} />
+
+      <CaseStudies caseStudies={caseStudies} dictionary={dictionary.home.innovation} />
+
+      <Culture dictionary={dictionary.home.culture} />
+
+      <Services dictionary={dictionary.home.services} />
+
+      <ContactSection dictionary={dictionary.home.footer.contact} />
+    </>
+  );
+}
+
 const clients = [
   ['Hotels', logoHotels],
   ['Governments', logoGovernments],
@@ -49,13 +81,24 @@ const clients = [
   ['Architects', logoArchitects],
 ]
 
-async function Clients({dictionary}) {
+function Clients({ dictionary }) {
+  const clients = [
+    [dictionary.categories[0], logoHotels],
+    [dictionary.categories[1], logoGovernments],
+    [dictionary.categories[2], logoStartups],
+    [dictionary.categories[3], logoRealEstate],
+    [dictionary.categories[4], logoEcommerce],
+    [dictionary.categories[5], logoRestaurants],
+    [dictionary.categories[6], logoEducation],
+    [dictionary.categories[7], logoArchitects],
+  ];
+
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
-        <FadeIn  className="flex items-center gap-x-8">
+        <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
-          {dictionary.title}
+            {dictionary.title}
           </h2>
           <div className="h-px flex-auto bg-neutral-800" />
         </FadeIn>
@@ -75,19 +118,17 @@ async function Clients({dictionary}) {
         </FadeInStagger>
       </Container>
     </div>
-  )
+  );
 }
 
-function CaseStudies({ caseStudies }) {
+function CaseStudies({ caseStudies, dictionary }) {
   return (
     <>
       <SectionIntro
-        title="Empowering innovation through technology"
+        title={dictionary.title}
         className="mt-24 sm:mt-32 lg:mt-40"
       >
-        <p>
-          We harness the power of technology to create solutions that drive progress, inspire change, and transform industries.
-        </p>
+        <p>{dictionary.description}</p>
       </SectionIntro>
       <Container className="mt-16">
         <FadeInStagger className="grid grid-cols-1 gap-8 lg:grid-cols-3">
@@ -115,7 +156,7 @@ function CaseStudies({ caseStudies }) {
                   <span className="text-neutral-300" aria-hidden="true">
                     /
                   </span>
-                  <span>Case study</span>
+                  <span>{dictionary.caseStudyLabel}</span>
                 </p>
                 <p className="mt-6 font-display text-2xl font-semibold text-neutral-950">
                   {caseStudy.title}
@@ -129,32 +170,26 @@ function CaseStudies({ caseStudies }) {
         </FadeInStagger>
       </Container>
     </>
-  )
+  );
 }
 
-function Culture() {
+function Culture({ dictionary }) {
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
       <SectionIntro
-        eyebrow="Our culture"
-        title="Guided by heritage, united by shared values."
+        eyebrow="Culture"
+        title={dictionary.title}
         invert
       >
-        <p>
-        Our culture is inspired by the rich traditions of Morocco, blending a commitment to excellence with a deep appreciation for community and creativity.
-        </p>
+        <p>{dictionary.description}</p>
       </SectionIntro>
       <Container className="mt-16">
         <GridList>
-          <GridListItem title="Hospitality" invert>
-            Rooted in the tradition of welcoming others, we cultivate an environment where everyone feels valued and respected.
-          </GridListItem>
-          <GridListItem title="Craftsmanship" invert>
-            Taking inspiration from intricate artisan work, we emphasize quality and precision in everything we create.
-          </GridListItem>
-          <GridListItem title="Community" invert>
-            Reflecting close-knit bonds, we prioritize collaboration and trust to build a strong team dynamic.
-          </GridListItem>
+          {Array.isArray(dictionary.values) && dictionary.values.map((value, index) => (
+            <GridListItem key={index} title={value.title} invert>
+              {value.description}
+            </GridListItem>
+          ))}
         </GridList>
       </Container>
     </div>
@@ -162,21 +197,18 @@ function Culture() {
 }
 
 
-
-function Services() {
+function Services({ dictionary }) {
   return (
-    <>
-      <SectionIntro
-        eyebrow="Services"
-        title="We help you discover, innovate, and seize new opportunities."
+<>      <SectionIntro
+        eyebrow={dictionary.eyebrow}
+        title={dictionary.title}
         className="mt-24 sm:mt-32 lg:mt-40"
       >
-        <p>
-          Our mission is to provide tailored digital solutions that empower your business to adapt, grow, and succeed in an ever-evolving landscape.
-        </p>
+        <p>{dictionary.description}</p>
       </SectionIntro>
+
       <Container className="mt-16">
-      <div className="lg:flex lg:items-center lg:justify-end">
+        <div className="lg:flex lg:items-center lg:justify-end">
           <div className="flex justify-center lg:w-1/2 lg:justify-end lg:pr-12">
             <FadeIn className="w-[33.75rem] flex-none lg:w-[45rem]">
               <StylizedImage
@@ -187,65 +219,20 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Web Development">
-              We design and build stunning, responsive websites that deliver exceptional user experiences and support your business objectives.
-            </ListItem>
-            <ListItem title="Application Development">
-              Our experienced team specializes in building scalable and efficient applications using the latest frameworks and technologies.
-            </ListItem>
-            <ListItem title="E-commerce Solutions">
-              We create customized e-commerce platforms tailored to your business needs, ensuring seamless online shopping experiences.
-            </ListItem>
-            <ListItem title="Custom Content Management Systems">
-              We develop robust, user-friendly CMS solutions that give you complete control over your content while ensuring scalability and security.
-            </ListItem>
+            {Array.isArray(dictionary.values) && dictionary.values.map((value, index) => (
+              <ListItem key={index} title={value.title}>
+                {value.description}
+              </ListItem>
+            ))}
           </List>
         </div>
       </Container>
     </>
-  )
+  );
 }
 
 export const metadata = {
+  title: 'Jabal Studio',
   description:
     'We are a development studio working at the intersection of design and technology.',
-}
-
-
-
-export default async function Home({ params }) {
-  let caseStudies = (await loadCaseStudies()).slice(0, 3)
-  const lang = (await params).lang
-  const dictionary = await getDictionary(lang);
-  return (
-    <>
-      <Container className="mt-24 sm:mt-32 md:mt-56">
-        <FadeIn className="max-w-3xl">
-          <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            {dictionary.header.title}
-          </h1>
-          {/* <LocaleSwitcher /> */}
-          <p className="mt-6 text-xl text-neutral-600">
-            {dictionary.header.description}
-          </p>
-        </FadeIn>
-      </Container>
-
-      <Clients dictionary={dictionary.industries}/>
-
-      <CaseStudies caseStudies={caseStudies} />
-
-      {/* <PageLinks
-              className="mt-24 sm:mt-32 lg:mt-40"
-              title="From the blog"
-              intro="Our team of experienced designers and developers has just one thing on their mind; working on your ideas to draw a smile on the face of your users worldwide. From conducting Brand Sprints to UX Design."
-              pages={blogArticles}
-            /> */}
-            <Culture />
-
-      <Services />
-
-      <ContactSection />
-    </>
-  )
 }

@@ -17,40 +17,44 @@ function Office({ name, children, invert = false }) {
   )
 }
 
+export function Contact({ dictionary, invert = false, ...props }) {
 
-
-export function Offices({ invert = false, ...props }) {
   return (
-    <ul role="list" {...props}>
-      <li>
-        <Office name="Fez" invert={invert}>
-          2 rue Lemqasem
-          <br />
-          30000 Fez, Morocco
-
-        </Office>
-      </li>
-    </ul>
-  )
-}
-
-export function Contact({ invert = false, ...props }) {
-  return (
-
     <div
       className={clsx(
         'text-sm not-italic mt-6',
         invert ? 'text-neutral-300' : 'text-neutral-600',
       )}
     >
-      <strong className={invert ? 'text-white' : 'text-neutral-950'}>
-        Hamza Ellouizi
+      {/* <strong className={invert ? 'text-white' : 'text-neutral-950'}>
+        {dictionary.name}
       </strong>
       <br />
-      Sales Manager
+      {dictionary.role}
       <br />
-      +212 6 61 23 45 67
+      {dictionary.phone} */}
     </div>
+  );
+}
+
+export function Offices({ invert = false, ...props }) {
+  return (
+    <ul role="list" {...props}>
+      <li>
+        <Office name="Fez" invert={invert}>
+          2 rue Lemsagem
+          <br />
+          30000 Fez, Morocco
+        </Office>
+      </li>
+      <li>
+        <Office name="Sefrou" invert={invert}>
+          2 rue Lemqasem
+          <br />
+          31000 Sefrou, Morocco
+        </Office>
+      </li>
+    </ul>
   )
 }
 

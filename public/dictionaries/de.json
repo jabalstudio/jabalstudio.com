@@ -1,46 +1,67 @@
 {
-  "header": {
-    "title": "Kreatives Studio mit Sitz in Marokko 🇲🇦",
-    "description": "Wir sind ein Team aus leidenschaftlichen Designern und Entwicklern, das Kreativität und Technologie vereint, um bedeutungsvolle Erlebnisse zu schaffen. Mit Sitz in Marokko bringen wir einzigartige Ideen zum Leben, inspiriert von Innovation und einem Engagement für Exzellenz."
-  },
-  "industries": {
-    "title": "Wir haben mit Unternehmen aus verschiedenen Branchen zusammengearbeitet.",
-    "categories": ["Hotels", "Regierungen", "Start-ups", "Immobilien", "E-Commerce", "Restaurants", "Bildung", "Architekten"]
-  },
-  "innovation": {
-    "title": "Innovation durch Technologie fördern",
-    "description": "Wir nutzen die Kraft der Technologie, um Lösungen zu schaffen, die Fortschritt vorantreiben, Veränderungen inspirieren und Branchen transformieren.",
-    "caseStudies": {
-      "2023": {
-        "title": "Umgehe die Bank, leihe von denen, denen du vertraust",
-        "description": "FamilyFund ist eine Crowdfunding-Plattform für Freunde und Familie, die es Nutzern ermöglicht, persönliche Kredite von ihrem Netzwerk zu erhalten, ohne eine traditionelle Finanzinstitution zu nutzen."
-      },
-      "2022_1": {
-        "title": "Übernimm die Kontrolle über deine Gesundheit",
-        "description": "Unseal ist die erste NFT-Plattform, auf der Nutzer NFTs ihrer eigenen Gesundheitsdaten erstellen und handeln können, um die Kontrolle über ihre Daten zu übernehmen."
-      },
-      "2022_2": {
-        "title": "Überwinde deine Ängste, finde deinen Partner",
-        "description": "Finde Liebe trotz Angst — Phobia ist eine Dating-App, die Nutzer basierend auf ihren gemeinsamen Phobien zusammenbringt, damit sie ihre Ängste gemeinsam bewältigen können."
+  "home": {
+    "header": {
+      "logoAlt": "Jabal Studio Logo",
+      "contactButton": "Kontaktieren Sie uns",
+      "navbar": {
+        "work": "Unsere Arbeit",
+        "about": "Über Uns",
+        "process": "Unser Prozess",
+        "blog": "Blog"
       }
-    }
-  },
-  "culture": {
-    "title": "Unsere Kultur",
-    "subtitle": "Geleitet von Tradition, vereint durch gemeinsame Werte.",
-    "description": "Unsere Kultur ist inspiriert von den reichen Traditionen Marokkos und verbindet ein Engagement für Exzellenz mit einer tiefen Wertschätzung für Gemeinschaft und Kreativität.",
-    "values": {
-      "hospitality": {
-        "title": "Gastfreundschaft",
-        "description": "In der Tradition der Gastfreundschaft verwurzelt, schaffen wir eine Umgebung, in der sich jeder geschätzt und respektiert fühlt."
+    },
+    "hero": {
+      "title": "Kreatives Studio mit Sitz in Marokko 🇲🇦",
+      "description": "Wir sind ein Team leidenschaftlicher Designer und Entwickler, das Kreativität und Technologie kombiniert, um bedeutungsvolle Erlebnisse zu schaffen. Mit Sitz in Marokko bringen wir einzigartige Ideen zum Leben, inspiriert von Innovation und einem Streben nach Exzellenz."
+    },
+    "industries": {
+      "title": "Wir haben mit Unternehmen aus verschiedenen Branchen zusammengearbeitet.",
+      "categories": ["Hotels", "Regierungen", "Start-ups", "Immobilien", "E-Commerce", "Restaurants", "Bildung", "Architekten"]
+    },
+    "innovation": {
+      "title": "Innovation durch Technologie fördern",
+      "description": "Wir nutzen die Kraft der Technologie, um Lösungen zu schaffen, die Fortschritt fördern, Veränderung inspirieren und Branchen transformieren."
+    },
+    "culture": {
+      "title": "Geleitet von Tradition, vereint durch gemeinsame Werte.",
+      "description": "Unsere Kultur ist inspiriert von den reichen Traditionen Marokkos und verbindet ein Engagement für Exzellenz mit einer tiefen Wertschätzung für Gemeinschaft und Kreativität.",
+      "values": {
+        "hospitality": "Verankert in der Tradition der Gastfreundschaft schaffen wir eine Umgebung, in der sich jeder wertgeschätzt und respektiert fühlt.",
+        "craftsmanship": "Inspiriert von detailreichem Kunsthandwerk legen wir Wert auf Qualität und Präzision in allem, was wir tun.",
+        "community": "Wir fördern enge Bindungen, setzen auf Zusammenarbeit und Vertrauen, um eine starke Teamdynamik aufzubauen."
+      }
+    },
+    "services": {
+      "title": "Wir helfen Ihnen, Neues zu entdecken, zu innovieren und neue Möglichkeiten zu nutzen.",
+      "description": "Unsere Mission ist es, maßgeschneiderte digitale Lösungen bereitzustellen, die Ihr Unternehmen dabei unterstützen, sich anzupassen, zu wachsen und in einer sich ständig verändernden Landschaft erfolgreich zu sein.",
+      "list": {
+        "webDevelopment": "Wir entwerfen und erstellen beeindruckende, responsive Websites, die außergewöhnliche Benutzererlebnisse bieten und Ihre Geschäftsziele unterstützen.",
+        "appDevelopment": "Unser erfahrenes Team spezialisiert sich auf die Entwicklung skalierbarer und effizienter Anwendungen mit den neuesten Frameworks und Technologien.",
+        "ecommerce": "Wir erstellen maßgeschneiderte E-Commerce-Plattformen, die auf die Bedürfnisse Ihres Unternehmens zugeschnitten sind und nahtlose Online-Einkaufserlebnisse gewährleisten.",
+        "cms": "Wir entwickeln robuste, benutzerfreundliche CMS-Lösungen, die Ihnen die vollständige Kontrolle über Ihre Inhalte geben und Skalierbarkeit und Sicherheit gewährleisten."
+      }
+    },
+    "footer": {
+      "contact": {
+        "title": "Erzählen Sie uns von Ihrem Projekt",
+        "button": "Sagen Sie Salam!",
+        "address": "Unsere Büros\nFès\n2 Rue Lemsagem\n30000 Fès, Marokko",
+        "businessInquiries": {
+          "title": "Geschäftsanfragen",
+          "name": "Hamza Ellouizi",
+          "role": "Verkaufsleiter",
+          "phone": "+212 6 12 34 56 78"
+        }
       },
-      "craftsmanship": {
-        "title": "Handwerkskunst",
-        "description": "Inspiriert von detailreicher Handwerkskunst legen wir Wert auf Qualität und Liebe zum Detail in allem, was wir schaffen."
+      "links": {
+        "work": ["FamilyFund", "Unseal", "Phobia", "Alle anzeigen"],
+        "company": ["Über uns", "Prozess", "Blog", "Kontaktieren Sie uns"],
+        "connect": ["Facebook", "Instagram", "GitHub", "Dribbble"]
       },
-      "community": {
-        "title": "Gemeinschaft",
-        "description": "Unsere engen Bindungen spiegeln sich wider in unserer Priorisierung von Zusammenarbeit und Vertrauen, um eine starke Grundlage für Erfolg zu schaffen."
+      "newsletter": {
+        "title": "Abonnieren Sie unseren Newsletter",
+        "description": "Abonnieren Sie, um die neuesten Design-News, Artikel, Ressourcen und Inspirationen zu erhalten.",
+        "placeholder": "E-Mail-Adresse"
       }
     }
   }

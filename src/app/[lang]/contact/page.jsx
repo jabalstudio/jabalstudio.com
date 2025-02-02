@@ -1,16 +1,18 @@
-import { useId } from 'react'
-import Link from 'next/link'
+import { useId } from "react";
+import Link from "next/link";
 
-import { Border } from '@/components/Border'
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import { FadeIn } from '@/components/FadeIn'
-import { Offices } from '@/components/Offices'
-import { PageIntro } from '@/components/PageIntro'
-import { SocialMedia } from '@/components/SocialMedia'
+import { Border } from "@/components/Border";
+import { Button } from "@/components/Button";
+import { Container } from "@/components/Container";
+import { FadeIn } from "@/components/FadeIn";
+import { Offices } from "@/components/Offices";
+import { PageIntro } from "@/components/PageIntro";
+import { SocialMedia } from "@/components/SocialMedia";
+
+import { getDictionary } from "../../[lang]/get-dictionary";
 
 function TextInput({ label, ...props }) {
-  let id = useId()
+  let id = useId();
 
   return (
     <div className="group relative z-0 transition-all focus-within:z-10">
@@ -28,7 +30,7 @@ function TextInput({ label, ...props }) {
         {label}
       </label>
     </div>
-  )
+  );
 }
 
 function RadioInput({ label, ...props }) {
@@ -41,73 +43,79 @@ function RadioInput({ label, ...props }) {
       />
       <span className="text-base/6 text-neutral-950">{label}</span>
     </label>
-  )
+  );
 }
 
-function ContactForm() {
+function ContactForm({ dictionary }) {
   return (
     <FadeIn className="lg:order-last">
       <form>
         <h2 className="font-display text-base font-semibold text-neutral-950">
-          Work inquiries
+          {dictionary.contact.form.title}
         </h2>
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
-          <TextInput label="Name" name="name" autoComplete="name" />
           <TextInput
-            label="Email"
+            label={dictionary.contact.form.fields.name}
+            name="name"
+            autoComplete="name"
+          />
+          <TextInput
+            label={dictionary.contact.form.fields.email}
             type="email"
             name="email"
             autoComplete="email"
           />
           <TextInput
-            label="Company"
+            label={dictionary.contact.form.fields.company}
             name="company"
             autoComplete="organization"
           />
-          <TextInput label="Phone" type="tel" name="phone" autoComplete="tel" />
-          <TextInput label="Message" name="message" />
+          <TextInput
+            label={dictionary.contact.form.fields.phone}
+            type="tel"
+            name="phone"
+            autoComplete="tel"
+          />
+          <TextInput label={dictionary.contact.form.fields.message} name="message" />
           <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
             <fieldset>
-              <legend className="text-base/6 text-neutral-500">Budget</legend>
+              <legend className="text-base/6 text-neutral-500">
+                {dictionary.contact.form.fields.budget.title}
+              </legend>
               <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
-                <RadioInput label="€500 – €2000" name="budget" value="25" />
-                <RadioInput label="€2000 – €10K" name="budget" value="50" />
-                <RadioInput label="€10K – €50K" name="budget" value="100" />
-                <RadioInput label="More than €50K" name="budget" value="150" />
+                {dictionary.contact.form.fields.budget.options.map((option, index) => (
+                  <RadioInput key={index} label={option.label} name="budget" value={option.value} />
+                ))}
               </div>
             </fieldset>
           </div>
         </div>
         <Button type="submit" className="mt-10">
-          Let’s work together
+          {dictionary.contact.form.submit}
         </Button>
       </form>
     </FadeIn>
-  )
+  );
 }
 
-function ContactDetails() {
+function ContactDetails({ dictionary }) {
   return (
     <FadeIn>
       <h2 className="font-display text-base font-semibold text-neutral-950">
-        Our offices
+        {dictionary.contact.details.title}
       </h2>
       <p className="mt-6 text-base text-neutral-600">
-        Prefer doing things in person? We don’t but we have to list our
-        addresses here for legal reasons.
+        {dictionary.contact.details.description}
       </p>
 
       <Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />
 
       <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
-          Email us
+          {dictionary.contact.details.emailTitle}
         </h2>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
-          {[
-            ['Support', 'salam@jabalstudio.com'],
-            ['Business inquiries', 'hamza@jabalstudio.com'],
-          ].map(([label, email]) => (
+          {dictionary.contact.details.emails.map(({ label, email }) => (
             <div key={email}>
               <dt className="font-semibold text-neutral-950">{label}</dt>
               <dd>
@@ -125,32 +133,38 @@ function ContactDetails() {
 
       <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
-          Follow us
+          {dictionary.contact.details.followTitle}
         </h2>
         <SocialMedia className="mt-6" />
       </Border>
     </FadeIn>
-  )
+  );
 }
 
 export const metadata = {
-  title: 'Contact Us',
-  description: 'Let’s work together. We can’t wait to hear from you.',
-}
+  title: "Contact Us",
+  description: "Let’s work together. We can’t wait to hear from you.",
+};
 
-export default function Contact() {
+export default async function Contact({ params }) {
+  const lang = params.lang;
+  const dictionary = await getDictionary(lang);
+
   return (
     <>
-      <PageIntro eyebrow="Contact us" title="Let’s work together">
-        <p>We can’t wait to hear from you.</p>
+      <PageIntro
+        eyebrow={dictionary.contact.page.eyebrow}
+        title={dictionary.contact.page.title}
+      >
+        <p>{dictionary.contact.page.description}</p>
       </PageIntro>
 
       <Container className="mt-24 sm:mt-32 lg:mt-40">
         <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
-          <ContactForm />
-          <ContactDetails />
+          <ContactForm dictionary={dictionary} />
+          <ContactDetails dictionary={dictionary} />
         </div>
       </Container>
     </>
-  )
+  );
 }

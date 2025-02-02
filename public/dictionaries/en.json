@@ -1,47 +1,148 @@
 {
+  "emoji": "🇬🇧",
+  "home": {
     "header": {
-      "title": "Creative studio proudly based in Morocco 🇲🇦",
+      "logoAlt": "Jabal Studio Logo",
+      "contactButton": "Contact us",
+      "navbar": {
+        "work": "Our Work",
+        "about": "About Us",
+        "process": "Our Process",
+        "blog": "Blog"
+      }
+    },
+    "hero": {
+      "title": "Creative studio proudly based in Morocco ",
       "description": "We are a team of passionate designers and developers, blending creativity and technology to craft meaningful experiences. Based in Morocco, we bring unique ideas to life, inspired by innovation and a dedication to excellence."
     },
     "industries": {
       "title": "We’ve collaborated with businesses from various industries.",
-      "categories": ["Hotels", "Governments", "Startups", "Real Estate", "E-commerce", "Restaurants", "Education", "Architects"]
+      "categories": [
+        "Hotels",
+        "Governments",
+        "Startups",
+        "Real Estate",
+        "E-commerce",
+        "Restaurants",
+        "Education",
+        "Architects"
+      ]
     },
     "innovation": {
       "title": "Empowering innovation through technology",
-      "description": "We harness the power of technology to create solutions that drive progress, inspire change, and transform industries.",
-      "caseStudies": {
-        "2023": {
-          "title": "Skip the bank, borrow from those you trust",
-          "description": "FamilyFund is a crowdfunding platform for friends and family. Allowing users to take personal loans from their network without a traditional financial institution."
-        },
-        "2022_1": {
-          "title": "Get a hold of your health",
-          "description": "Unseal is the first NFT platform where users can mint and trade NFTs of their own personal health records, allowing them to take control of their data."
-        },
-        "2022_2": {
-          "title": "Overcome your fears, find your match",
-          "description": "Findlove in the face of fear — Phobia is a dating app that matches users based on their mutual phobias so they can be scared together."
-        }
-      }
+      "description": "We harness the power of technology to create solutions that drive progress, inspire change, and transform industries."
     },
     "culture": {
-      "title": "Our culture",
-      "subtitle": "Guided by heritage, united by shared values.",
+      "title": "Guided by heritage, united by shared values.",
       "description": "Our culture is inspired by the rich traditions of Morocco, blending a commitment to excellence with a deep appreciation for community and creativity.",
       "values": {
-        "hospitality": {
-          "title": "Hospitality",
-          "description": "Rooted in the tradition of welcoming others, we cultivate an environment where everyone feels valued and respected."
-        },
-        "craftsmanship": {
-          "title": "Craftsmanship",
-          "description": "Taking inspiration from intricate artisan work, we emphasize quality and attention to detail in everything we create."
-        },
-        "community": {
-          "title": "Community",
-          "description": "Reflecting close-knit bonds, we prioritize collaboration and trust to build a strong foundation for success."
+        "hospitality": "Rooted in the tradition of welcoming others, we cultivate an environment where everyone feels valued and respected.",
+        "craftsmanship": "Taking inspiration from intricate artisan work, we emphasize quality and precision in everything we create.",
+        "community": "Reflecting close-knit bonds, we prioritize collaboration and trust to build a strong team dynamic."
+      }
+    },
+    "services": {
+      "title": "We help you discover, innovate, and seize new opportunities.",
+      "description": "Our mission is to provide tailored digital solutions that empower your business to adapt, grow, and succeed in an ever-evolving landscape.",
+      "list": {
+        "webDevelopment": "We design and build stunning, responsive websites that deliver exceptional user experiences and support your business objectives.",
+        "appDevelopment": "Our experienced team specializes in building scalable and efficient applications using the latest frameworks and technologies.",
+        "ecommerce": "We create customized e-commerce platforms tailored to your business needs, ensuring seamless online shopping experiences.",
+        "cms": "We develop robust, user-friendly CMS solutions that give you complete control over your content while ensuring scalability and security."
+      }
+    },
+    "footer": {
+      "contact": {
+        "title": "Tell us about your project",
+        "button": "Say salam!",
+        "address": "Our offices\nFez\n2 rue Lemsagem\n30000 Fez, Morocco",
+        "businessInquiries": {
+          "title": "Business inquiries",
+          "name": "Hamza Ellouizi",
+          "role": "Sales Manager",
+          "phone": "+212 6 12 34 56 78"
         }
+      },
+      "links": {
+        "work": [
+          "FamilyFund",
+          "Unseal",
+          "Phobia",
+          "See all"
+        ],
+        "company": [
+          "About",
+          "Process",
+          "Blog",
+          "Contact us"
+        ],
+        "connect": [
+          "Facebook",
+          "Instagram",
+          "GitHub",
+          "Dribbble"
+        ]
+      },
+      "newsletter": {
+        "title": "Sign up for our newsletter",
+        "description": "Subscribe to get the latest design news, articles, resources and inspiration.",
+        "placeholder": "Email address"
       }
     }
+  },
+  "contact": {
+    "page": {
+      "eyebrow": "Contact us",
+      "title": "Let’s work together",
+      "description": "We can’t wait to hear from you."
+    },
+    "form": {
+      "title": "Work inquiries",
+      "fields": {
+        "name": "Name",
+        "email": "Email",
+        "company": "Company",
+        "phone": "Phone",
+        "message": "Message",
+        "budget": {
+          "title": "Budget",
+          "options": [
+            {
+              "label": "€500 – €2000",
+              "value": "25"
+            },
+            {
+              "label": "€2000 – €10K",
+              "value": "50"
+            },
+            {
+              "label": "€10K – €50K",
+              "value": "100"
+            },
+            {
+              "label": "More than €50K",
+              "value": "150"
+            }
+          ]
+        }
+      },
+      "submit": "Let’s work together"
+    },
+    "details": {
+      "title": "Our offices",
+      "description": "Prefer doing things in person? We don’t but we have to list our addresses here for legal reasons.",
+      "emailTitle": "Email us",
+      "emails": [
+        {
+          "label": "Support",
+          "email": "salam@jabalstudio.com"
+        },
+        {
+          "label": "Business inquiries",
+          "email": "hamza@jabalstudio.com"
+        }
+      ],
+      "followTitle": "Follow us"
+    }
   }
+}

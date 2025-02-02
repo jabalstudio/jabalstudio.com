@@ -47,6 +47,7 @@ function Header({
   onToggle,
   toggleRef,
   invert = false,
+  dictionary,
 }) {
   let { logoHovered, setLogoHovered } = useContext(RootLayoutContext)
 
@@ -72,6 +73,7 @@ function Header({
         </Link>
         <div className="flex items-center gap-x-8">
           <Button href="/contact" invert={invert}>
+            {/* {dictionary.home.header.contactButton} */}
             Contact us
           </Button>
           <button
@@ -138,7 +140,7 @@ function Navigation() {
   )
 }
 
-function RootLayoutInner({ children }) {
+function RootLayoutInner({ children, dictionary }) {
   let panelId = useId()
   let [expanded, setExpanded] = useState(false)
   let openRef = useRef(null)
@@ -182,6 +184,7 @@ function RootLayoutInner({ children }) {
                 closeRef.current?.focus({ preventScroll: true }),
               )
             }}
+            dictionary={dictionary}
           />
         </div>
 
@@ -231,7 +234,7 @@ function RootLayoutInner({ children }) {
                       className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2"
                     />
                   </div>
-                  
+
                   <div className="sm:border-l sm:border-transparent sm:pl-16">
                     <h2 className="font-display text-base font-semibold text-white">
                       Follow us
@@ -269,13 +272,14 @@ function RootLayoutInner({ children }) {
   )
 }
 
-export function RootLayout({ children }) {
+export async function RootLayout({ children, dictionary }) {
   let pathname = usePathname()
   let [logoHovered, setLogoHovered] = useState(false)
 
+
   return (
     <RootLayoutContext.Provider value={{ logoHovered, setLogoHovered }}>
-      <RootLayoutInner key={pathname}>{children}</RootLayoutInner>
+      <RootLayoutInner key={pathname} dictionary={dictionary}>{children}</RootLayoutInner>
     </RootLayoutContext.Provider>
   )
 }
