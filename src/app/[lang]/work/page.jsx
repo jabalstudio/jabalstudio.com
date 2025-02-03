@@ -20,6 +20,8 @@ import logoUnseal from '@/images/clients/unseal/logo-dark.svg'
 import { formatDate } from '@/lib/formatDate'
 import { loadCaseStudies } from '@/lib/mdx'
 
+import { getDictionary } from "../get-dictionary";
+
 function CaseStudies({ caseStudies }) {
   return (
     <Container className="mt-40">
@@ -137,7 +139,9 @@ export const metadata = {
     'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
 }
 
-export default async function Work() {
+export default async function Work({params}) {
+  const lang = (await params).lang;
+  const dictionary = await getDictionary(lang);
   let caseStudies = await loadCaseStudies()
 
   return (
@@ -165,7 +169,7 @@ export default async function Work() {
 
       <Clients />
 
-      <ContactSection />
+      <ContactSection dictionary={dictionary.home.footer.contact}/>
     </>
   )
 }

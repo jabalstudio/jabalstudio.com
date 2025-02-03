@@ -1,68 +1,387 @@
 {
+  "emoji": "🇬🇧",
   "home": {
     "header": {
       "logoAlt": "Logo de Jabal Studio",
       "contactButton": "Contáctanos",
       "navbar": {
-        "work": "Nuestro Trabajo",
-        "about": "Sobre Nosotros",
-        "process": "Nuestro Proceso",
+        "work": "Nuestro trabajo",
+        "about": "Acerca de",
+        "process": "Nuestro proceso",
         "blog": "Blog"
-      }
+      },
+      "ourOffices": {
+        "title": "Nuestras oficinas",
+        "address": "Sefrou\n2 Rue Lemqasem\n31000 Sefrou, Marruecos"
+      },
+      "businessInquiries": {
+        "title": "Consultas comerciales",
+        "name": "Hamza Ellouizi",
+        "role": "Gerente comercial",
+        "phone": "+212 6 61 23 45 67"
+      },
+      "followUs": "Síguenos"
     },
     "hero": {
-      "title": "Estudio creativo con sede orgullosamente en Marruecos",
-      "description": "Somos un equipo de diseñadores y desarrolladores apasionados, combinando creatividad y tecnología para crear experiencias significativas. Con sede en Marruecos, damos vida a ideas únicas, inspiradas en la innovación y una dedicación a la excelencia."
+      "title": "Estudio creativo con sede en Marruecos 🇲🇦",
+      "description": "Somos un equipo de diseñadores y desarrolladores apasionados, que combinan creatividad y tecnología para crear experiencias significativas. Con sede en Marruecos, damos vida a ideas únicas, inspiradas por la innovación y un compromiso con la excelencia."
     },
     "industries": {
-      "title": "Hemos colaborado con empresas de diversos sectores.",
-      "categories": ["Hoteles", "Gobiernos", "Startups", "Bienes Raíces", "E-commerce", "Restaurantes", "Educación", "Arquitectos"]
+      "title": "Hemos colaborado con empresas en diversos sectores.",
+      "categories": [
+        "Hoteles",
+        "Gobiernos",
+        "Startups",
+        "Bienes raíces",
+        "Comercio electrónico",
+        "Restaurantes",
+        "Educación",
+        "Arquitectos"
+      ]
     },
     "innovation": {
       "title": "Impulsando la innovación a través de la tecnología",
-      "description": "Aprovechamos el poder de la tecnología para crear soluciones que impulsen el progreso, inspiren el cambio y transformen las industrias."
+      "description": "Aprovechamos el poder de la tecnología para crear soluciones que impulsen el progreso, inspiren el cambio y transformen los sectores."
     },
     "culture": {
+      "eyebrow": "Nuestra cultura",
       "title": "Guiados por la herencia, unidos por valores compartidos.",
-      "description": "Nuestra cultura se inspira en las ricas tradiciones de Marruecos, combinando un compromiso con la excelencia y una profunda apreciación por la comunidad y la creatividad.",
-      "values": {
-        "hospitality": "Enraizados en la tradición de recibir a los demás, cultivamos un ambiente donde todos se sienten valorados y respetados.",
-        "craftsmanship": "Inspirándonos en el trabajo artesanal intrincado, enfatizamos la calidad y la precisión en todo lo que creamos.",
-        "community": "Reflejando vínculos estrechos, priorizamos la colaboración y la confianza para construir una dinámica de equipo sólida."
-      }
+      "description": "Nuestra cultura se inspira en las ricas tradiciones de Marruecos, combinando un compromiso con la excelencia y un profundo aprecio por la comunidad y la creatividad.",
+      "values": [
+        {
+          "title": "Hospitalidad",
+          "description": "Enraizada en la tradición de acoger a los demás, cultivamos un ambiente donde todos se sienten valorados y respetados."
+        },
+        {
+          "title": "Artesanía",
+          "description": "Inspirados por una artesanía refinada, enfatizamos la calidad y la precisión en todo lo que creamos."
+        },
+        {
+          "title": "Comunidad",
+          "description": "Reflejando conexiones estrechas, priorizamos la colaboración y la confianza para construir una dinámica de equipo sólida."
+        }
+      ]
     },
     "services": {
+      "eyebrow": "Nuestros servicios",
       "title": "Te ayudamos a descubrir, innovar y aprovechar nuevas oportunidades.",
-      "description": "Nuestra misión es proporcionar soluciones digitales personalizadas que permitan a tu negocio adaptarse, crecer y tener éxito en un entorno en constante evolución.",
-      "list": {
-        "webDevelopment": "Diseñamos y construimos sitios web impresionantes y responsivos que ofrecen experiencias de usuario excepcionales y respaldan tus objetivos comerciales.",
-        "appDevelopment": "Nuestro equipo experimentado se especializa en construir aplicaciones escalables y eficientes utilizando los últimos frameworks y tecnologías.",
-        "ecommerce": "Creamos plataformas de comercio electrónico personalizadas adaptadas a las necesidades de tu negocio, asegurando experiencias de compra en línea fluidas.",
-        "cms": "Desarrollamos soluciones CMS robustas y fáciles de usar que te brindan un control total sobre tu contenido mientras garantizan escalabilidad y seguridad."
-      }
+      "description": "Nuestra misión es proporcionar soluciones digitales personalizadas que permitan a tu empresa adaptarse, crecer y tener éxito en un entorno en constante evolución.",
+      "values": [
+        {
+          "title": "Desarrollo web",
+          "description": "Diseñamos y desarrollamos sitios web hermosos y responsivos que ofrecen experiencias de usuario excepcionales y respaldan los objetivos de tu negocio."
+        },
+        {
+          "title": "Desarrollo de aplicaciones",
+          "description": "Nuestro equipo experimentado se especializa en construir aplicaciones escalables y eficientes utilizando las últimas tecnologías y frameworks."
+        },
+        {
+          "title": "Comercio electrónico",
+          "description": "Creamos plataformas de comercio electrónico personalizadas, adaptadas a las necesidades de tu negocio, asegurando experiencias de compra en línea fluidas."
+        },
+        {
+          "title": "CMS",
+          "description": "Desarrollamos soluciones CMS robustas y fáciles de usar que te brindan control total sobre tu contenido, garantizando escalabilidad y seguridad."
+        }
+      ]
     },
     "footer": {
       "contact": {
         "title": "Cuéntanos sobre tu proyecto",
-        "button": "¡Di salam!",
-        "address": "Nuestras oficinas\nFez\n2 rue Lemsagem\n30000 Fez, Marruecos",
+        "button": "Hablemos 👋",
         "businessInquiries": {
           "title": "Consultas comerciales",
           "name": "Hamza Ellouizi",
-          "role": "Gerente de Ventas",
-          "phone": "+212 6 12 34 56 78"
+          "role": "Gerente comercial",
+          "phone": "+212 6 61 23 45 67"
         }
       },
       "links": {
-        "work": ["FamilyFund", "Unseal", "Phobia", "Ver todo"],
-        "company": ["Sobre Nosotros", "Proceso", "Blog", "Contáctanos"],
-        "connect": ["Facebook", "Instagram", "GitHub", "Dribbble"]
+        "work": [
+          "FamilyFund",
+          "Unseal",
+          "Phobia",
+          "Ver todo"
+        ],
+        "company": [
+          "Acerca de",
+          "Proceso",
+          "Blog",
+          "Contáctanos"
+        ],
+        "connect": [
+          "Facebook",
+          "Instagram",
+          "GitHub",
+          "Dribbble"
+        ]
       },
       "newsletter": {
         "title": "Suscríbete a nuestro boletín",
-        "description": "Suscríbete para recibir las últimas noticias, artículos, recursos e inspiración en diseño.",
-        "placeholder": "Correo electrónico"
+        "description": "Suscríbete para recibir las últimas noticias, artículos, recursos e inspiración de diseño.",
+        "placeholder": "Dirección de correo electrónico"
       }
+    }
+  },
+  "contact": {
+    "page": {
+      "eyebrow": "Contáctanos",
+      "title": "Trabajemos juntos",
+      "description": "Esperamos saber de ti."
+    },
+    "form": {
+      "title": "Consultas de trabajo",
+      "fields": {
+        "name": "Nombre",
+        "email": "Correo electrónico",
+        "company": "Empresa",
+        "phone": "Teléfono",
+        "message": "Mensaje",
+        "budget": {
+          "title": "Presupuesto",
+          "options": [
+            {
+              "label": "€500 – €2000",
+              "value": "25"
+            },
+            {
+              "label": "€2000 – €10K",
+              "value": "50"
+            },
+            {
+              "label": "€10K – €50K",
+              "value": "100"
+            },
+            {
+              "label": "Más de €50K",
+              "value": "150"
+            }
+          ]
+        }
+      },
+      "submit": "Trabajemos juntos"
+    },
+    "details": {
+      "title": "Nuestras oficinas",
+      "description": "¿Prefieres hacer las cosas en persona? Nosotros tampoco, pero necesitamos listar nuestras direcciones aquí por razones legales.",
+      "emailTitle": "Envíanos un correo",
+      "emails": [
+        {
+          "label": "Soporte",
+          "email": "salam@jabalstudio.com"
+        },
+        {
+          "label": "Consultas comerciales",
+          "email": "hamza@jabalstudio.com"
+        }
+      ],
+      "followTitle": "Síguenos"
+    }
+  },
+  "about": {
+    "metadata": {
+      "title": "Acerca de nosotros",
+      "description": "Creemos que nuestra fortaleza radica en nuestro enfoque colaborativo, que sitúa a nuestros clientes en el centro de todo lo que hacemos."
+    },
+    "intro": {
+      "eyebrow": "Acerca de",
+      "title": "Nuestra fortaleza es la colaboración",
+      "description": "Creemos que nuestra fortaleza radica en nuestro enfoque colaborativo, que sitúa a nuestros clientes en el centro de todo lo que hacemos.",
+      "story": [
+        "El estudio fue iniciado por tres amigos que notaron que los estudios de desarrollo cobraban a los clientes el doble de lo que costaría un equipo interno. Desde el principio, nos hemos comprometido a hacer las cosas de manera diferente, cobrando el triple.",
+        "En el estudio, somos más que simples colegas: somos una familia. Esto significa que pagamos muy poco y esperamos que la gente trabaje hasta tarde. Queremos que nuestros empleados sean auténticos en el trabajo. A cambio, solo pedimos que se queden hasta al menos las 18:30."
+      ]
+    },
+    "stats": {
+      "talents": "6",
+      "clients": "13",
+      "linesOfCode": "1.5M"
+    },
+    "culture": {
+      "eyebrow": "Nuestra cultura",
+      "title": "Guiados por la herencia, unidos por valores compartidos.",
+      "description": "Nuestra cultura se inspira en las ricas tradiciones de Marruecos, combinando un compromiso con la excelencia y un profundo aprecio por la comunidad y la creatividad.",
+      "values": [
+        {
+          "title": "Hospitalidad",
+          "description": "Enraizada en la tradición de acoger a los demás, cultivamos un ambiente donde todos se sienten valorados y respetados."
+        },
+        {
+          "title": "Artesanía",
+          "description": "Inspirados por el trabajo artesanal detallado, enfatizamos la calidad y la precisión en todo lo que creamos."
+        },
+        {
+          "title": "Comunidad",
+          "description": "Reflejando lazos estrechos, damos prioridad a la colaboración y la confianza para construir una dinámica de equipo sólida."
+        }
+      ]
+    },
+    "team": {
+      "leadership": [
+        {
+          "name": "Ibrahim Adlani",
+          "role": "CEO y Director Técnico",
+          "image": "dries-vincent"
+        },
+        {
+          "name": "Hamza Ellouizi",
+          "role": "Gerente de ventas",
+          "image": "imageMichaelFoster"
+        }
+      ],
+      "members": [
+        {
+          "name": "Leonard Krasner",
+          "role": "Director creativo",
+          "image": "imageLeonardKrasner"
+        },
+        {
+          "name": "Blake Reid",
+          "role": "Ingeniero de software",
+          "image": "imageBlakeReid"
+        },
+        {
+          "name": "Jeffrey Webb",
+          "role": "Diseñador UX/UI",
+          "image": "imageJeffreyWebb"
+        },
+        {
+          "name": "Benjamin Russel",
+          "role": "Ingeniero de software, Becario",
+          "image": "imageBenjaminRussel"
+        }
+      ]
+    },
+    "blogSection": {
+      "title": "Del blog",
+      "intro": "Nuestro equipo de diseñadores y desarrolladores experimentados tiene una sola meta: trabajar en tus ideas para dibujar una sonrisa en el rostro de tus usuarios en todo el mundo. Desde la realización de Brand Sprints hasta el diseño UX."
+    }
+  },
+  "blog": {
+    "metadata": {
+      "title": "Blog",
+      "description": "Mantente al día con las últimas noticias, artículos y análisis de nuestro equipo de expertos."
+    },
+    "intro": {
+      "eyebrow": "Blog",
+      "title": "Los últimos artículos y noticias",
+      "description": "Mantente actualizado con las últimas noticias del sector mientras nuestros equipos de marketing encuentran nuevas formas de reutilizar antiguos artículos de trucos CSS."
+    },
+    "articles": [
+      {
+        "title": "El futuro del e-commerce",
+        "description": "Descubre cómo está evolucionando el panorama del e-commerce y qué tendencias observar en los próximos años.",
+        "image": "imageEcommerce",
+        "author": "Hamza Ellouizi",
+        "date": "12 de mayo de 2021"
+      },
+      {
+        "title": "El poder de los sistemas de diseño",
+        "description": "Aprende cómo los sistemas de diseño pueden ayudar a optimizar tu proceso de diseño y crear una experiencia de usuario más coherente.",
+        "image": "imageDesignSystems",
+        "author": "Leonard Krasner",
+        "date": "28 de abril de 2021"
+      },
+      {
+        "title": "El auge del trabajo remoto",
+        "description": "Explora los beneficios y desafíos del trabajo remoto y cómo crear una cultura de trabajo a distancia exitosa.",
+        "image": "imageRemoteWork",
+        "author": "Ibrahim Adlani",
+        "date": "14 de abril de 2021"
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Nuestro proceso",
+    "title": "Cómo trabajamos",
+    "description": "Creemos en la eficiencia y en maximizar nuestros recursos para ofrecer el mejor valor a nuestros clientes. La forma principal de lograrlo es reutilizando los mismos cinco proyectos que hemos estado desarrollando durante la última década.",
+    "discover": {
+      "index": "01",
+      "title": "Descubrir",
+      "paragraphs": [
+        "Trabajamos estrechamente con nuestros clientes para entender sus necesidades y objetivos, integrándonos en sus operaciones diarias para comprender qué impulsa el éxito de su negocio.",
+        "Nuestro equipo de investigadores privados sigue durante varias semanas a los directores de las empresas, mientras nuestros gerentes de cuentas se dedican a revisar sus desechos. Nuestros expertos en seguridad realizan posteriormente ataques de ingeniería social para acceder a sus cuentas empresariales, entregando esa información a nuestro equipo de contabilidad forense.",
+        "Una vez completada la auditoría integral, les presentamos un plan completo y, lo que es más importante, un presupuesto."
+      ],
+      "phases": [
+        "Cuestionarios en profundidad",
+        "Estudios de viabilidad",
+        "Muestras de sangre",
+        "Encuestas a empleados",
+        "Pruebas de concepto",
+        "Auditoría forense"
+      ]
+    },
+    "build": {
+      "index": "02",
+      "title": "Construir",
+      "paragraphs": [
+        "A partir de la fase de descubrimiento, desarrollamos una hoja de ruta completa para cada producto y comenzamos a trabajar para su entrega. La hoja de ruta es un enredo intrincado de jerga técnica diseñado para alargar el proyecto tanto como sea posible.",
+        "A cada cliente se le asigna un gerente de cuentas clave para mantener abiertas las líneas de comunicación y ocultar el progreso real del proyecto. Actúan como un amortiguador entre las constantes quejas del cliente y el equipo de desarrollo, que trabaja arduamente buscando en proyectos de código abierto para reutilizar código.",
+        "Nuestros gerentes de cuentas están entrenados para responder a los correos de los clientes solo después de las 9 p.m., varios días después del correo inicial. Esto refuerza la idea de que estamos muy ocupados y disuade a los clientes de solicitar cambios."
+      ],
+      "phases": [
+        {
+          "title": "Pruebas",
+          "description": "Nuestros proyectos siempre cuentan con una cobertura de pruebas del 100%, lo cual sería impresionante si nuestras pruebas no fueran tan permeables como un colador."
+        },
+        {
+          "title": "Infraestructura",
+          "description": "Para garantizar la fiabilidad, solo usamos los mejores droplets de Digital Ocean que se pueden comprar por $4 al mes."
+        },
+        {
+          "title": "Soporte",
+          "description": "Debido a que tenemos las claves API de cada servicio crítico que utiliza tu empresa, puedes esperar soporte de por vida, y facturas, de nuestra parte."
+        },
+        {
+          "title": "Soporte",
+          "description": "Debido a que tenemos las claves API de cada servicio crítico que utiliza tu empresa, puedes esperar soporte de por vida, y facturas, de nuestra parte."
+        }
+      ]
+    },
+    "deliver": {
+      "index": "03",
+      "title": "Entregar",
+      "paragraphs": [
+        "A mitad de la fase de construcción, retrasamos cada proyecto 6 semanas debido a un cambio en los requisitos. Esto nos permite aumentar el presupuesto una última vez antes del lanzamiento.",
+        "A pesar de utilizar en gran medida componentes preconstruidos, la mayor parte del progreso en cada proyecto se produce en las últimas 24 horas. El tiempo de desarrollo asignado a cada cliente se dedica en realidad a crear demos de realidad aumentada que se vuelven virales en las redes sociales.",
+        "Nos aseguramos de que las páginas principales del sitio estén completamente funcionales en el lanzamiento; las páginas auxiliares, por supuesto, serán esqueletos de lorem ipsum que se actualizarán como parte de nuestro exorbitante contrato de mantenimiento."
+      ],
+      "quote": {
+        "text": "¡El estudio actualizaba su progreso con tanta regularidad que casi pensamos que era automático!",
+        "author": "Debra Fiscal, CEO de Unseal"
+      }
+    },
+    "values": {
+      "eyebrow": "Nuestros valores",
+      "title": "Equilibrando la fiabilidad y la innovación",
+      "description": "Nos esforzamos por mantenernos a la vanguardia de las tendencias y tecnologías emergentes, mientras las ignoramos por completo para bifurcar ese viejo proyecto Rails con el que nos sentimos cómodos. Nos mantenemos fieles a nuestros valores fundamentales para justificar esa decisión.",
+      "values": [
+        {
+          "title": "Meticuloso",
+          "description": "La primera parte de cualquier asociación es lograr que nuestro diseñador coloque tu logo en nuestra plantilla. El segundo paso es que ellos definan los colores."
+        },
+        {
+          "title": "Eficiente",
+          "description": "Nos enorgullece no perder nunca un plazo, lo cual es fácil ya que la mayor parte del trabajo se realizó hace años."
+        },
+        {
+          "title": "Adaptable",
+          "description": "Cada negocio tiene necesidades únicas y nuestro mayor desafío es encajar esas necesidades en algo que ya hemos construido."
+        },
+        {
+          "title": "Honesto",
+          "description": "Somos transparentes acerca de todos nuestros procesos, basándonos en el simple hecho de que nuestros clientes en realidad nunca leen nada."
+        },
+        {
+          "title": "Leal",
+          "description": "Fomentamos relaciones a largo plazo con nuestros clientes que van más allá de la simple entrega de un producto, lo que nos permite facturarlos durante décadas."
+        },
+        {
+          "title": "Innovador",
+          "description": "El panorama tecnológico está en constante evolución y nosotros también. Estamos constantemente en busca de nuevos proyectos de código abierto para clonar."
+        }
+      ]
     }
   }
 }

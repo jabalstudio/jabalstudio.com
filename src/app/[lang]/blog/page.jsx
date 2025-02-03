@@ -10,21 +10,24 @@ import { PageIntro } from '@/components/PageIntro'
 import { formatDate } from '@/lib/formatDate'
 import { loadArticles } from '@/lib/mdx'
 
+import { getDictionary } from "../get-dictionary";
+
 export const metadata = {
   title: 'Blog',
   description:
     'Stay up-to-date with the latest industry news as our marketing teams finds new ways to re-purpose old CSS tricks articles.',
 }
 
-export default async function Blog() {
+export default async function Blog({ params }) {
+  const lang = (await params).lang;
+  const dictionary = await getDictionary(lang);
   let articles = await loadArticles()
 
   return (
     <>
-      <PageIntro eyebrow="Blog" title="The latest articles and news">
+      <PageIntro eyebrow={dictionary.blog.intro.eyebrow} title={dictionary.blog.intro.title}>
         <p>
-          Stay up-to-date with the latest industry news as our marketing teams
-          finds new ways to re-purpose old CSS tricks articles.
+          {dictionary.blog.intro.description}
         </p>
       </PageIntro>
 
@@ -82,7 +85,7 @@ export default async function Blog() {
         </div>
       </Container>
 
-      <ContactSection />
+      <ContactSection dictionary={dictionary.home.footer.contact}/>
     </>
   )
 }

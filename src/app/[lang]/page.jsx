@@ -65,7 +65,7 @@ export default async function Home({ params }) {
 
       <Services dictionary={dictionary.home.services} />
 
-      <ContactSection dictionary={dictionary.home.footer.contact} />
+      <ContactSection dictionary={dictionary.home.footer.contact}/>
     </>
   );
 }
@@ -177,7 +177,7 @@ function Culture({ dictionary }) {
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
       <SectionIntro
-        eyebrow="Culture"
+        eyebrow={dictionary.eyebrow}
         title={dictionary.title}
         invert
       >

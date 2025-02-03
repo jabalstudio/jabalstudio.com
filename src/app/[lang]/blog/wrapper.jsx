@@ -6,7 +6,11 @@ import { PageLinks } from '@/components/PageLinks'
 import { formatDate } from '@/lib/formatDate'
 import { loadArticles } from '@/lib/mdx'
 
-export default async function BlogArticleWrapper({ article, children }) {
+import { getDictionary } from "../get-dictionary";
+
+export default async function BlogArticleWrapper({ params, article, children }) {
+  const lang = (await params).lang;
+  const dictionary = await getDictionary(lang);
   let allArticles = await loadArticles()
   let moreArticles = allArticles
     .filter(({ metadata }) => metadata !== article)
@@ -47,7 +51,7 @@ export default async function BlogArticleWrapper({ article, children }) {
         />
       )}
 
-      <ContactSection />
+      <ContactSection dictionary={dictionary.home.footer.contact}/>
     </>
   )
 }

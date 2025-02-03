@@ -76,7 +76,7 @@ export default async function CaseStudyLayout({ caseStudy, children }) {
         />
       )}
 
-      <ContactSection />
+      <ContactSection dictionary={dictionary.home.footer.contact}/>
     </>
   )
 }

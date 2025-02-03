@@ -20,6 +20,7 @@ import { GridPattern } from '@/components/GridPattern'
 import { Logo, Logomark } from '@/components/Logo'
 import { Contact, Offices } from '@/components/Offices'
 import { SocialMedia } from '@/components/SocialMedia'
+import { LocaleSwitcher } from '@/components/LocaleSwitcher'
 
 const RootLayoutContext = createContext(null)
 
@@ -47,7 +48,7 @@ function Header({
   onToggle,
   toggleRef,
   invert = false,
-  dictionary,
+
 }) {
   let { logoHovered, setLogoHovered } = useContext(RootLayoutContext)
 
@@ -73,9 +74,9 @@ function Header({
         </Link>
         <div className="flex items-center gap-x-8">
           <Button href="/contact" invert={invert}>
-            {/* {dictionary.home.header.contactButton} */}
             Contact us
           </Button>
+          <LocaleSwitcher invert={invert} />
           <button
             ref={toggleRef}
             type="button"
@@ -125,16 +126,16 @@ function NavigationItem({ href, children }) {
   )
 }
 
-function Navigation() {
+function Navigation({dictionary}) {
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
-        <NavigationItem href="/work">Our Work</NavigationItem>
-        <NavigationItem href="/about">About Us</NavigationItem>
+        <NavigationItem href="/work">{dictionary.home.header.navbar.work}</NavigationItem>
+        <NavigationItem href="/about">{dictionary.home.header.navbar.about}</NavigationItem>
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href="/process">Our Process</NavigationItem>
-        <NavigationItem href="/blog">Blog</NavigationItem>
+        <NavigationItem href="/process">{dictionary.home.header.navbar.process}</NavigationItem>
+        <NavigationItem href="/blog">{dictionary.home.header.navbar.blog}</NavigationItem>
       </NavigationRow>
     </nav>
   )
@@ -184,7 +185,6 @@ function RootLayoutInner({ children, dictionary }) {
                 closeRef.current?.focus({ preventScroll: true }),
               )
             }}
-            dictionary={dictionary}
           />
         </div>
 
@@ -212,13 +212,13 @@ function RootLayoutInner({ children, dictionary }) {
                 }}
               />
             </div>
-            <Navigation />
+            <Navigation dictionary={dictionary}/>
             <div className="relative bg-neutral-950 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
               <Container>
                 <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-3 sm:pt-16">
                   <div>
                     <h2 className="font-display text-base font-semibold text-white">
-                      Our offices
+                    {dictionary.home.header.ourOffices.title}
                     </h2>
                     <Offices
                       invert
@@ -227,7 +227,7 @@ function RootLayoutInner({ children, dictionary }) {
                   </div>
                   <div>
                     <h2 className="font-display text-base font-semibold text-white">
-                      Business inquiries
+                    {dictionary.home.header.businessInquiries.title}
                     </h2>
                     <Contact
                       invert
@@ -237,7 +237,7 @@ function RootLayoutInner({ children, dictionary }) {
 
                   <div className="sm:border-l sm:border-transparent sm:pl-16">
                     <h2 className="font-display text-base font-semibold text-white">
-                      Follow us
+                    {dictionary.home.header.followUs}
                     </h2>
                     <SocialMedia className="mt-6" invert />
                   </div>
@@ -265,7 +265,7 @@ function RootLayoutInner({ children, dictionary }) {
 
           <main className="w-full flex-auto">{children}</main>
 
-          <Footer />
+          <Footer dictionary={dictionary} />
         </motion.div>
       </motion.div>
     </MotionConfig>
@@ -275,7 +275,6 @@ function RootLayoutInner({ children, dictionary }) {
 export async function RootLayout({ children, dictionary }) {
   let pathname = usePathname()
   let [logoHovered, setLogoHovered] = useState(false)
-
 
   return (
     <RootLayoutContext.Provider value={{ logoHovered, setLogoHovered }}>

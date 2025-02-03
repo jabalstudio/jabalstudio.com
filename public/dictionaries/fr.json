@@ -1,102 +1,124 @@
 {
-  "emoji": "🇫🇷",
+  "emoji": "🇬🇧",
   "home": {
     "header": {
       "logoAlt": "Logo de Jabal Studio",
       "contactButton": "Contactez-nous",
       "navbar": {
-        "work": "Nos Projets",
-        "about": "À Propos",
-        "process": "Notre Processus",
+        "work": "Nos réalisations",
+        "about": "À propos",
+        "process": "Notre processus",
         "blog": "Blog"
       },
       "ourOffices": {
         "title": "Nos bureaux",
-        "address": "Séfrou\n2 rue Lemqasem\n31000 Séfrou, Maroc"
+        "address": "Sefrou\n2 Rue Lemqasem\n31000 Sefrou, Maroc"
       },
       "businessInquiries": {
         "title": "Demandes commerciales",
         "name": "Hamza Ellouizi",
-        "role": "Responsable Commercial",
+        "role": "Responsable commercial",
         "phone": "+212 6 61 23 45 67"
       },
       "followUs": "Suivez-nous"
-      
     },
     "hero": {
       "title": "Studio créatif basé au Maroc 🇲🇦",
-      "description": "Nous sommes une équipe de designers et développeurs passionnés, mêlant créativité et technologie pour créer des expériences significatives. Basés au Maroc, nous donnons vie à des idées uniques, inspirées par l'innovation et un engagement envers l'excellence."
+      "description": "Nous sommes une équipe de designers et développeurs passionnés, alliant créativité et technologie pour créer des expériences significatives. Basés au Maroc, nous donnons vie à des idées uniques, inspirées par l'innovation et un engagement envers l'excellence."
     },
     "industries": {
-      "title": "Nous avons collaboré avec des entreprises de divers secteurs.",
-      "categories": ["Hôtels", "Gouvernements", "Startups", "Immobilier", "E-commerce", "Restaurants", "Éducation", "Architectes"]
+      "title": "Nous avons collaboré avec des entreprises dans divers secteurs.",
+      "categories": [
+        "Hôtels",
+        "Gouvernements",
+        "Startups",
+        "Immobilier",
+        "E-commerce",
+        "Restaurants",
+        "Éducation",
+        "Architectes"
+      ]
     },
     "innovation": {
       "title": "Stimuler l'innovation grâce à la technologie",
-      "description": "Nous exploitons le pouvoir de la technologie pour créer des solutions qui favorisent le progrès, inspirent le changement et transforment les industries."
+      "description": "Nous exploitons la puissance de la technologie pour créer des solutions qui stimulent le progrès, inspirent le changement et transforment les secteurs."
     },
     "culture": {
-      "title": "Guidés par l'héritage, unis par des valeurs partagées.",
-      "description": "Notre culture est inspirée des riches traditions du Maroc, combinant un engagement envers l'excellence avec une profonde appréciation de la communauté et de la créativité.",
+      "eyebrow": "Notre culture",
+      "title": "Guidés par le patrimoine, unis par des valeurs communes.",
+      "description": "Notre culture s'inspire des riches traditions du Maroc, alliant un engagement envers l'excellence à une profonde appréciation de la communauté et de la créativité.",
       "values": [
         {
           "title": "Hospitalité",
-          "description": "Enracinés dans la tradition d'accueillir les autres, nous cultivons un environnement où chacun se sent valorisé et respecté."
+          "description": "Ancrée dans la tradition de l'accueil, nous cultivons un environnement où chacun se sent valorisé et respecté."
         },
         {
-          "title": "Artisanat",
-          "description": "Inspirés par le travail artisanal raffiné, nous mettons l'accent sur la qualité et la précision dans tout ce que nous créons."
+          "title": "Savoir-faire",
+          "description": "Inspirés par un artisanat raffiné, nous mettons l'accent sur la qualité et la précision dans tout ce que nous créons."
         },
         {
           "title": "Communauté",
-          "description": "Reflétant des liens étroits, nous privilégions la collaboration et la confiance pour bâtir une dynamique d'équipe solide."
+          "description": "Reflétant des liens étroits, nous privilégions la collaboration et la confiance pour construire une dynamique d'équipe solide."
         }
-
       ]
     },
     "services": {
-      "eyebrow": "Nos Services",
+      "eyebrow": "Nos services",
       "title": "Nous vous aidons à découvrir, innover et saisir de nouvelles opportunités.",
-      "description": "Notre mission est de fournir des solutions numériques sur mesure qui permettent à votre entreprise de s'adapter, croître et réussir dans un paysage en constante évolution.",
+      "description": "Notre mission est de fournir des solutions digitales sur mesure qui permettent à votre entreprise de s'adapter, de croître et de réussir dans un environnement en constante évolution.",
       "values": [
         {
           "title": "Développement Web",
-          "description": "Nous concevons et développons des sites web magnifiques et réactifs qui offrent des expériences utilisateur exceptionnelles et soutiennent vos objectifs commerciaux."
+          "description": "Nous concevons et développons des sites web beaux et responsives qui offrent des expériences utilisateur exceptionnelles et soutiennent vos objectifs commerciaux."
         },
         {
-          "title": "Développement d'Applications",
-          "description": "Notre équipe expérimentée se spécialise dans la création d'applications évolutives et efficaces en utilisant les technologies et frameworks les plus récents."
+          "title": "Développement d'applications",
+          "description": "Notre équipe expérimentée se spécialise dans la création d'applications évolutives et efficaces en utilisant les dernières technologies et frameworks."
         },
         {
           "title": "E-commerce",
-          "description": "Nous créons des plateformes de commerce électronique personnalisées adaptées aux besoins de votre entreprise, garantissant des expériences d'achat en ligne fluides."
+          "description": "Nous créons des plateformes e-commerce sur mesure adaptées aux besoins de votre entreprise, garantissant des expériences d'achat en ligne fluides."
         },
         {
           "title": "CMS",
-          "description": "Nous développons des solutions CMS robustes et conviviales qui vous donnent un contrôle total sur votre contenu tout en garantissant évolutivité et sécurité."
+          "description": "Nous développons des solutions CMS robustes et conviviales qui vous offrent un contrôle total sur votre contenu tout en garantissant évolutivité et sécurité."
         }
       ]
     },
     "footer": {
       "contact": {
         "title": "Parlez-nous de votre projet",
-        "button": "Venez discuter 👋",
-        
+        "button": "Discutons-en 👋",
         "businessInquiries": {
           "title": "Demandes commerciales",
           "name": "Hamza Ellouizi",
-          "role": "Responsable Commercial",
+          "role": "Responsable commercial",
           "phone": "+212 6 61 23 45 67"
-          }
+        }
       },
       "links": {
-        "work": ["FamilyFund", "Unseal", "Phobia", "Voir tout"],
-        "company": ["À Propos", "Processus", "Blog", "Contactez-nous"],
-        "connect": ["Facebook", "Instagram", "GitHub", "Dribbble"]
+        "work": [
+          "FamilyFund",
+          "Unseal",
+          "Phobia",
+          "Voir tout"
+        ],
+        "company": [
+          "À propos",
+          "Processus",
+          "Blog",
+          "Contactez-nous"
+        ],
+        "connect": [
+          "Facebook",
+          "Instagram",
+          "GitHub",
+          "Dribbble"
+        ]
       },
       "newsletter": {
-        "title": "Inscrivez-vous à notre newsletter",
-        "description": "Abonnez-vous pour recevoir les dernières actualités, articles, ressources et inspirations en matière de design.",
+        "title": "Abonnez-vous à notre newsletter",
+        "description": "Abonnez-vous pour recevoir les dernières actualités, articles, ressources et inspirations de design.",
         "placeholder": "Adresse e-mail"
       }
     }
@@ -105,23 +127,35 @@
     "page": {
       "eyebrow": "Contactez-nous",
       "title": "Travaillons ensemble",
-      "description": "Nous sommes impatients d'avoir de vos nouvelles."
+      "description": "Nous avons hâte d'avoir de vos nouvelles."
     },
     "form": {
-      "title": "Demandes de travail",
+      "title": "Demandes de collaboration",
       "fields": {
         "name": "Nom",
-        "email": "E-mail",
+        "email": "Email",
         "company": "Entreprise",
         "phone": "Téléphone",
         "message": "Message",
         "budget": {
           "title": "Budget",
           "options": [
-            { "label": "€500 – €2000", "value": "25" },
-            { "label": "€2000 – €10K", "value": "50" },
-            { "label": "€10K – €50K", "value": "100" },
-            { "label": "Plus de €50K", "value": "150" }
+            {
+              "label": "€500 – €2000",
+              "value": "25"
+            },
+            {
+              "label": "€2000 – €10K",
+              "value": "50"
+            },
+            {
+              "label": "€10K – €50K",
+              "value": "100"
+            },
+            {
+              "label": "Plus de €50K",
+              "value": "150"
+            }
           ]
         }
       },
@@ -129,13 +163,225 @@
     },
     "details": {
       "title": "Nos bureaux",
-      "description": "Vous préférez faire les choses en personne ? Nous non plus, mais nous devons mentionner nos adresses ici pour des raisons légales.",
-      "emailTitle": "Envoyez-nous un e-mail",
+      "description": "Vous préférez faire les choses en personne ? Nous aussi pas, mais nous devons indiquer nos adresses ici pour des raisons légales.",
+      "emailTitle": "Envoyez-nous un email",
       "emails": [
-        { "label": "Support", "email": "salam@jabalstudio.com" },
-        { "label": "Demandes commerciales", "email": "hamza@jabalstudio.com" }
+        {
+          "label": "Support",
+          "email": "salam@jabalstudio.com"
+        },
+        {
+          "label": "Demandes commerciales",
+          "email": "hamza@jabalstudio.com"
+        }
       ],
       "followTitle": "Suivez-nous"
+    }
+  },
+  "about": {
+    "metadata": {
+      "title": "À propos de nous",
+      "description": "Nous croyons que notre force réside dans notre approche collaborative, qui place nos clients au cœur de tout ce que nous faisons."
+    },
+    "intro": {
+      "eyebrow": "À propos",
+      "title": "Notre force, c'est la collaboration",
+      "description": "Nous croyons que notre force réside dans notre approche collaborative, qui place nos clients au cœur de tout ce que nous faisons.",
+      "story": [
+        "Le studio a été lancé par trois amis qui ont remarqué que les studios de développement facturaient aux clients le double de ce qu'une équipe interne coûterait. Dès le départ, nous nous sommes engagés à faire les choses différemment en facturant le triple.",
+        "Au Studio, nous sommes plus que de simples collègues — nous sommes une famille. Cela signifie que nous payons très peu et attendons des gens qu'ils travaillent tard. Nous voulons que nos employés se présentent tels qu'ils sont au travail. En retour, nous leur demandons simplement de rester jusqu'à au moins 18h30."
+      ]
+    },
+    "stats": {
+      "talents": "6",
+      "clients": "13",
+      "linesOfCode": "1.5M"
+    },
+    "culture": {
+      "eyebrow": "Notre culture",
+      "title": "Guidés par le patrimoine, unis par des valeurs communes.",
+      "description": "Notre culture s'inspire des riches traditions du Maroc, alliant un engagement envers l'excellence à une profonde appréciation de la communauté et de la créativité.",
+      "values": [
+        {
+          "title": "Hospitalité",
+          "description": "Ancrée dans la tradition de l'accueil, nous cultivons un environnement où chacun se sent valorisé et respecté."
+        },
+        {
+          "title": "Savoir-faire",
+          "description": "S'inspirant du travail artisanal minutieux, nous mettons l'accent sur la qualité et la précision dans tout ce que nous créons."
+        },
+        {
+          "title": "Communauté",
+          "description": "Reflétant des liens étroits, nous privilégions la collaboration et la confiance pour construire une dynamique d'équipe solide."
+        }
+      ]
+    },
+    "team": {
+      "leadership": [
+        {
+          "name": "Ibrahim Adlani",
+          "role": "PDG & Directeur Technique",
+          "image": "dries-vincent"
+        },
+        {
+          "name": "Hamza Ellouizi",
+          "role": "Responsable commercial",
+          "image": "imageMichaelFoster"
+        }
+      ],
+      "members": [
+        {
+          "name": "Leonard Krasner",
+          "role": "Directeur créatif",
+          "image": "imageLeonardKrasner"
+        },
+        {
+          "name": "Blake Reid",
+          "role": "Ingénieur logiciel",
+          "image": "imageBlakeReid"
+        },
+        {
+          "name": "Jeffrey Webb",
+          "role": "Designer UX/UI",
+          "image": "imageJeffreyWebb"
+        },
+        {
+          "name": "Benjamin Russel",
+          "role": "Ingénieur logiciel, Stagiaire",
+          "image": "imageBenjaminRussel"
+        }
+      ]
+    },
+    "blogSection": {
+      "title": "Du blog",
+      "intro": "Notre équipe de designers et développeurs expérimentés a une seule préoccupation : travailler sur vos idées pour esquisser un sourire sur le visage de vos utilisateurs à travers le monde. De la réalisation de Brand Sprints au design UX."
+    }
+  },
+  "blog": {
+    "metadata": {
+      "title": "Blog",
+      "description": "Restez à jour avec les dernières actualités, articles et analyses de notre équipe d'experts."
+    },
+    "intro": {
+      "eyebrow": "Blog",
+      "title": "Les derniers articles et actualités",
+      "description": "Restez informé des dernières actualités du secteur tandis que nos équipes marketing trouvent de nouvelles manières de réutiliser d'anciens articles sur les astuces CSS."
+    },
+    "articles": [
+      {
+        "title": "L'avenir de l'e-commerce",
+        "description": "Découvrez comment le paysage de l'e-commerce évolue et quelles tendances surveiller dans les années à venir.",
+        "image": "imageEcommerce",
+        "author": "Hamza Ellouizi",
+        "date": "12 mai 2021"
+      },
+      {
+        "title": "La puissance des systèmes de design",
+        "description": "Découvrez comment les systèmes de design peuvent rationaliser votre processus de conception et créer une expérience utilisateur plus cohérente.",
+        "image": "imageDesignSystems",
+        "author": "Leonard Krasner",
+        "date": "28 avril 2021"
+      },
+      {
+        "title": "L'essor du télétravail",
+        "description": "Explorez les avantages et les défis du télétravail et comment créer une culture du travail à distance réussie.",
+        "image": "imageRemoteWork",
+        "author": "Ibrahim Adlani",
+        "date": "14 avril 2021"
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Notre processus",
+    "title": "Comment nous travaillons",
+    "description": "Nous croyons en l'efficacité et en la maximisation de nos ressources pour offrir la meilleure valeur à nos clients. La principale manière d'y parvenir est de réutiliser les mêmes cinq projets que nous développons depuis une décennie.",
+    "discover": {
+      "index": "01",
+      "title": "Découvrir",
+      "paragraphs": [
+        "Nous travaillons en étroite collaboration avec nos clients pour comprendre leurs besoins et objectifs, en nous immergeant dans leur quotidien afin de comprendre ce qui fait le succès de leur entreprise.",
+        "Notre équipe d'enquêteurs privés suit les directeurs d'entreprise pendant plusieurs semaines pendant que nos gestionnaires de comptes se concentrent sur le tri de leurs poubelles. Nos experts en sécurité effectuent ensuite des piratages d'ingénierie sociale pour accéder à leurs comptes professionnels, transmettant ces informations à notre équipe d'expertise comptable.",
+        "Une fois l'audit complet réalisé, nous revenons vers vous avec un plan complet et, plus important encore, un budget."
+      ],
+      "phases": [
+        "Questionnaires approfondis",
+        "Études de faisabilité",
+        "Échantillons de sang",
+        "Sondages auprès des employés",
+        "Preuves de concept",
+        "Audit forensique"
+      ]
+    },
+    "build": {
+      "index": "02",
+      "title": "Construire",
+      "paragraphs": [
+        "À partir de la phase de découverte, nous élaborons une feuille de route complète pour chaque produit et commençons à travailler en vue de la livraison. Cette feuille de route est un enchevêtrement complexe de jargon technique conçu pour prolonger le projet aussi longtemps que possible.",
+        "Chaque client se voit attribuer un gestionnaire de compte dédié pour maintenir des lignes de communication ouvertes et dissimuler l'avancement réel du projet. Ils servent de tampon entre les réclamations incessantes du client et l'équipe de développement, qui s'affaire à fouiller des projets open source pour récupérer du code.",
+        "Nos gestionnaires de compte sont formés pour répondre aux emails des clients uniquement après 21h, plusieurs jours après l'email initial. Cela renforce l'aura de grande occupation et dissuade les clients de demander des modifications."
+      ],
+      "phases": [
+        {
+          "title": "Tests",
+          "description": "Nos projets bénéficient toujours d'une couverture de test à 100 %, ce qui serait impressionnant si nos tests n'étaient pas aussi perméables qu'une passoire."
+        },
+        {
+          "title": "Infrastructure",
+          "description": "Pour garantir la fiabilité, nous n'utilisons que les meilleurs droplets Digital Ocean disponibles pour 4 $ par mois."
+        },
+        {
+          "title": "Support",
+          "description": "Parce que nous détenons les clés API de chaque service critique utilisé par votre entreprise, vous pouvez vous attendre à un support à vie, ainsi qu'à des factures, de notre part."
+        },
+        {
+          "title": "Support",
+          "description": "Parce que nous détenons les clés API de chaque service critique utilisé par votre entreprise, vous pouvez vous attendre à un support à vie, ainsi qu'à des factures, de notre part."
+        }
+      ]
+    },
+    "deliver": {
+      "index": "03",
+      "title": "Livrer",
+      "paragraphs": [
+        "Vers le milieu de la phase de construction, nous repoussons chaque projet de 6 semaines en raison d'un changement de exigences. Cela nous permet d'augmenter le budget une dernière fois avant le lancement.",
+        "Bien que nous utilisions largement des composants préconçus, la majeure partie des progrès sur chaque projet s'effectue dans les dernières 24 heures. Le temps de développement alloué à chaque client est en réalité consacré à la réalisation de démonstrations en réalité augmentée qui deviennent virales sur les réseaux sociaux.",
+        "Nous veillons à ce que les pages principales du site soient entièrement fonctionnelles au lancement — les pages auxiliaires seront, bien entendu, des coquilles de lorem ipsum qui seront mises à jour dans le cadre de notre contrat de maintenance exorbitant."
+      ],
+      "quote": {
+        "text": "Le studio fournissait des mises à jour si régulières sur l'avancement que nous avons presque cru qu'elles étaient automatisées !",
+        "author": "Debra Fiscal, PDG d'Unseal"
+      }
+    },
+    "values": {
+      "eyebrow": "Nos valeurs",
+      "title": "Allier fiabilité et innovation",
+      "description": "Nous nous efforçons de rester à la pointe des tendances et technologies émergentes, tout en les ignorant complètement pour forker ce vieux projet Rails avec lequel nous nous sentons à l'aise. Nous restons fidèles à nos valeurs fondamentales pour justifier cette décision.",
+      "values": [
+        {
+          "title": "Méticuleux",
+          "description": "La première étape de tout partenariat consiste à demander à notre designer d'intégrer votre logo dans notre modèle. La deuxième étape est de lui faire choisir les couleurs."
+        },
+        {
+          "title": "Efficace",
+          "description": "Nous sommes fiers de ne jamais manquer une échéance, ce qui est facile puisque la majeure partie du travail a été réalisée il y a des années."
+        },
+        {
+          "title": "Adaptable",
+          "description": "Chaque entreprise a des besoins uniques et notre plus grand défi est de forcer ces besoins dans quelque chose que nous avons déjà construit."
+        },
+        {
+          "title": "Honnête",
+          "description": "Nous sommes transparents sur tous nos processus, misant sur le simple fait que nos clients ne lisent en réalité jamais rien."
+        },
+        {
+          "title": "Fidèle",
+          "description": "Nous favorisons des relations à long terme avec nos clients qui vont bien au-delà de la simple livraison d'un produit, nous permettant de leur facturer pendant des décennies."
+        },
+        {
+          "title": "Innovant",
+          "description": "Le paysage technologique évolue sans cesse, et nous aussi. Nous sommes constamment à la recherche de nouveaux projets open source à cloner."
+        }
+      ]
     }
   }
 }

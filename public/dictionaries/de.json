@@ -1,68 +1,387 @@
 {
+  "emoji": "🇬🇧",
   "home": {
     "header": {
-      "logoAlt": "Jabal Studio Logo",
+      "logoAlt": "Logo von Jabal Studio",
       "contactButton": "Kontaktieren Sie uns",
       "navbar": {
-        "work": "Unsere Arbeit",
-        "about": "Über Uns",
+        "work": "Unsere Arbeiten",
+        "about": "Über uns",
         "process": "Unser Prozess",
         "blog": "Blog"
-      }
+      },
+      "ourOffices": {
+        "title": "Unsere Büros",
+        "address": "Sefrou\n2 Rue Lemqasem\n31000 Sefrou, Marokko"
+      },
+      "businessInquiries": {
+        "title": "Geschäftsanfragen",
+        "name": "Hamza Ellouizi",
+        "role": "Geschäftsleiter",
+        "phone": "+212 6 61 23 45 67"
+      },
+      "followUs": "Folgen Sie uns"
     },
     "hero": {
-      "title": "Kreatives Studio mit Sitz in Marokko 🇲🇦",
-      "description": "Wir sind ein Team leidenschaftlicher Designer und Entwickler, das Kreativität und Technologie kombiniert, um bedeutungsvolle Erlebnisse zu schaffen. Mit Sitz in Marokko bringen wir einzigartige Ideen zum Leben, inspiriert von Innovation und einem Streben nach Exzellenz."
+      "title": "Kreativstudio mit Sitz in Marokko 🇲🇦",
+      "description": "Wir sind ein Team leidenschaftlicher Designer und Entwickler, das Kreativität und Technologie vereint, um bedeutungsvolle Erlebnisse zu schaffen. Mit Sitz in Marokko erwecken wir einzigartige Ideen zum Leben, inspiriert von Innovation und einem Engagement für Exzellenz."
     },
     "industries": {
       "title": "Wir haben mit Unternehmen aus verschiedenen Branchen zusammengearbeitet.",
-      "categories": ["Hotels", "Regierungen", "Start-ups", "Immobilien", "E-Commerce", "Restaurants", "Bildung", "Architekten"]
+      "categories": [
+        "Hotels",
+        "Regierungen",
+        "Startups",
+        "Immobilien",
+        "E-Commerce",
+        "Restaurants",
+        "Bildung",
+        "Architekten"
+      ]
     },
     "innovation": {
-      "title": "Innovation durch Technologie fördern",
-      "description": "Wir nutzen die Kraft der Technologie, um Lösungen zu schaffen, die Fortschritt fördern, Veränderung inspirieren und Branchen transformieren."
+      "title": "Innovation durch Technologie vorantreiben",
+      "description": "Wir nutzen die Kraft der Technologie, um Lösungen zu schaffen, die Fortschritt fördern, Veränderungen inspirieren und Branchen transformieren."
     },
     "culture": {
+      "eyebrow": "Unsere Kultur",
       "title": "Geleitet von Tradition, vereint durch gemeinsame Werte.",
-      "description": "Unsere Kultur ist inspiriert von den reichen Traditionen Marokkos und verbindet ein Engagement für Exzellenz mit einer tiefen Wertschätzung für Gemeinschaft und Kreativität.",
-      "values": {
-        "hospitality": "Verankert in der Tradition der Gastfreundschaft schaffen wir eine Umgebung, in der sich jeder wertgeschätzt und respektiert fühlt.",
-        "craftsmanship": "Inspiriert von detailreichem Kunsthandwerk legen wir Wert auf Qualität und Präzision in allem, was wir tun.",
-        "community": "Wir fördern enge Bindungen, setzen auf Zusammenarbeit und Vertrauen, um eine starke Teamdynamik aufzubauen."
-      }
+      "description": "Unsere Kultur wird von den reichen Traditionen Marokkos inspiriert und verbindet Engagement für Exzellenz mit einer tiefen Wertschätzung für Gemeinschaft und Kreativität.",
+      "values": [
+        {
+          "title": "Gastfreundschaft",
+          "description": "Verankert in der Tradition, andere willkommen zu heißen, schaffen wir ein Umfeld, in dem sich jeder wertgeschätzt und respektiert fühlt."
+        },
+        {
+          "title": "Handwerkskunst",
+          "description": "Inspiriert von feiner Handwerkskunst legen wir Wert auf Qualität und Präzision in allem, was wir erschaffen."
+        },
+        {
+          "title": "Gemeinschaft",
+          "description": "Indem wir enge Verbindungen pflegen, setzen wir auf Zusammenarbeit und Vertrauen, um eine starke Teamdynamik aufzubauen."
+        }
+      ]
     },
     "services": {
-      "title": "Wir helfen Ihnen, Neues zu entdecken, zu innovieren und neue Möglichkeiten zu nutzen.",
-      "description": "Unsere Mission ist es, maßgeschneiderte digitale Lösungen bereitzustellen, die Ihr Unternehmen dabei unterstützen, sich anzupassen, zu wachsen und in einer sich ständig verändernden Landschaft erfolgreich zu sein.",
-      "list": {
-        "webDevelopment": "Wir entwerfen und erstellen beeindruckende, responsive Websites, die außergewöhnliche Benutzererlebnisse bieten und Ihre Geschäftsziele unterstützen.",
-        "appDevelopment": "Unser erfahrenes Team spezialisiert sich auf die Entwicklung skalierbarer und effizienter Anwendungen mit den neuesten Frameworks und Technologien.",
-        "ecommerce": "Wir erstellen maßgeschneiderte E-Commerce-Plattformen, die auf die Bedürfnisse Ihres Unternehmens zugeschnitten sind und nahtlose Online-Einkaufserlebnisse gewährleisten.",
-        "cms": "Wir entwickeln robuste, benutzerfreundliche CMS-Lösungen, die Ihnen die vollständige Kontrolle über Ihre Inhalte geben und Skalierbarkeit und Sicherheit gewährleisten."
-      }
+      "eyebrow": "Unsere Dienstleistungen",
+      "title": "Wir helfen Ihnen, neue Möglichkeiten zu entdecken, zu innovieren und zu ergreifen.",
+      "description": "Unsere Mission ist es, maßgeschneiderte digitale Lösungen bereitzustellen, die es Ihrem Unternehmen ermöglichen, sich anzupassen, zu wachsen und in einer sich ständig verändernden Landschaft erfolgreich zu sein.",
+      "values": [
+        {
+          "title": "Webentwicklung",
+          "description": "Wir entwerfen und entwickeln ansprechende, responsive Websites, die außergewöhnliche Benutzererlebnisse bieten und Ihre Geschäftsziele unterstützen."
+        },
+        {
+          "title": "App-Entwicklung",
+          "description": "Unser erfahrenes Team ist darauf spezialisiert, skalierbare und effiziente Anwendungen mit den neuesten Technologien und Frameworks zu entwickeln."
+        },
+        {
+          "title": "E-Commerce",
+          "description": "Wir erstellen individuelle E-Commerce-Plattformen, die auf die Bedürfnisse Ihres Unternehmens zugeschnitten sind und reibungslose Online-Einkaufserlebnisse gewährleisten."
+        },
+        {
+          "title": "CMS",
+          "description": "Wir entwickeln robuste und benutzerfreundliche CMS-Lösungen, die Ihnen die volle Kontrolle über Ihre Inhalte bieten und dabei Skalierbarkeit und Sicherheit gewährleisten."
+        }
+      ]
     },
     "footer": {
       "contact": {
         "title": "Erzählen Sie uns von Ihrem Projekt",
-        "button": "Sagen Sie Salam!",
-        "address": "Unsere Büros\nFès\n2 Rue Lemsagem\n30000 Fès, Marokko",
+        "button": "Lassen Sie uns sprechen 👋",
         "businessInquiries": {
           "title": "Geschäftsanfragen",
           "name": "Hamza Ellouizi",
-          "role": "Verkaufsleiter",
-          "phone": "+212 6 12 34 56 78"
+          "role": "Geschäftsleiter",
+          "phone": "+212 6 61 23 45 67"
         }
       },
       "links": {
-        "work": ["FamilyFund", "Unseal", "Phobia", "Alle anzeigen"],
-        "company": ["Über uns", "Prozess", "Blog", "Kontaktieren Sie uns"],
-        "connect": ["Facebook", "Instagram", "GitHub", "Dribbble"]
+        "work": [
+          "FamilyFund",
+          "Unseal",
+          "Phobia",
+          "Alle anzeigen"
+        ],
+        "company": [
+          "Über uns",
+          "Prozess",
+          "Blog",
+          "Kontakt"
+        ],
+        "connect": [
+          "Facebook",
+          "Instagram",
+          "GitHub",
+          "Dribbble"
+        ]
       },
       "newsletter": {
         "title": "Abonnieren Sie unseren Newsletter",
-        "description": "Abonnieren Sie, um die neuesten Design-News, Artikel, Ressourcen und Inspirationen zu erhalten.",
+        "description": "Abonnieren Sie, um die neuesten Nachrichten, Artikel, Ressourcen und Design-Inspirationen zu erhalten.",
         "placeholder": "E-Mail-Adresse"
       }
+    }
+  },
+  "contact": {
+    "page": {
+      "eyebrow": "Kontaktieren Sie uns",
+      "title": "Lassen Sie uns zusammenarbeiten",
+      "description": "Wir freuen uns darauf, von Ihnen zu hören."
+    },
+    "form": {
+      "title": "Projektanfragen",
+      "fields": {
+        "name": "Name",
+        "email": "E-Mail",
+        "company": "Firma",
+        "phone": "Telefon",
+        "message": "Nachricht",
+        "budget": {
+          "title": "Budget",
+          "options": [
+            {
+              "label": "€500 – €2000",
+              "value": "25"
+            },
+            {
+              "label": "€2000 – €10K",
+              "value": "50"
+            },
+            {
+              "label": "€10K – €50K",
+              "value": "100"
+            },
+            {
+              "label": "Mehr als €50K",
+              "value": "150"
+            }
+          ]
+        }
+      },
+      "submit": "Lassen Sie uns zusammenarbeiten"
+    },
+    "details": {
+      "title": "Unsere Büros",
+      "description": "Bevorzugen Sie persönliche Treffen? Wir auch nicht, aber aus rechtlichen Gründen müssen wir hier unsere Adressen angeben.",
+      "emailTitle": "Senden Sie uns eine E-Mail",
+      "emails": [
+        {
+          "label": "Support",
+          "email": "salam@jabalstudio.com"
+        },
+        {
+          "label": "Geschäftsanfragen",
+          "email": "hamza@jabalstudio.com"
+        }
+      ],
+      "followTitle": "Folgen Sie uns"
+    }
+  },
+  "about": {
+    "metadata": {
+      "title": "Über uns",
+      "description": "Wir glauben, dass unsere Stärke in unserem kollaborativen Ansatz liegt, der unsere Kunden in den Mittelpunkt all unserer Aktivitäten stellt."
+    },
+    "intro": {
+      "eyebrow": "Über uns",
+      "title": "Unsere Stärke ist Zusammenarbeit",
+      "description": "Wir glauben, dass unsere Stärke in unserem kollaborativen Ansatz liegt, der unsere Kunden in den Mittelpunkt stellt.",
+      "story": [
+        "Das Studio wurde von drei Freunden gegründet, die bemerkten, dass Entwicklerstudios ihren Kunden das Doppelte berechneten, was ein internes Team kosten würde. Von Anfang an haben wir uns dazu verpflichtet, es anders zu machen, indem wir stattdessen das Dreifache verlangen.",
+        "Im Studio sind wir mehr als nur Kollegen – wir sind eine Familie. Das bedeutet, dass wir wenig bezahlen und erwarten, dass die Leute lange arbeiten. Wir möchten, dass unsere Mitarbeiter sich voll einbringen. Im Gegenzug bitten wir lediglich, dass sie bis mindestens 18:30 Uhr bleiben."
+      ]
+    },
+    "stats": {
+      "talents": "6",
+      "clients": "13",
+      "linesOfCode": "1.5M"
+    },
+    "culture": {
+      "eyebrow": "Unsere Kultur",
+      "title": "Geleitet von Tradition, vereint durch gemeinsame Werte.",
+      "description": "Unsere Kultur wird von den reichen Traditionen Marokkos inspiriert und verbindet Engagement für Exzellenz mit einer tiefen Wertschätzung für Gemeinschaft und Kreativität.",
+      "values": [
+        {
+          "title": "Gastfreundschaft",
+          "description": "Verankert in der Tradition, andere willkommen zu heißen, schaffen wir ein Umfeld, in dem sich jeder geschätzt und respektiert fühlt."
+        },
+        {
+          "title": "Handwerkskunst",
+          "description": "Inspiriert von kunstvollem Handwerk legen wir großen Wert auf Qualität und Präzision in allem, was wir erschaffen."
+        },
+        {
+          "title": "Gemeinschaft",
+          "description": "Indem wir enge Verbindungen pflegen, setzen wir auf Zusammenarbeit und Vertrauen, um eine starke Teamdynamik zu fördern."
+        }
+      ]
+    },
+    "team": {
+      "leadership": [
+        {
+          "name": "Ibrahim Adlani",
+          "role": "CEO & Technischer Direktor",
+          "image": "dries-vincent"
+        },
+        {
+          "name": "Hamza Ellouizi",
+          "role": "Geschäftsleiter",
+          "image": "imageMichaelFoster"
+        }
+      ],
+      "members": [
+        {
+          "name": "Leonard Krasner",
+          "role": "Kreativdirektor",
+          "image": "imageLeonardKrasner"
+        },
+        {
+          "name": "Blake Reid",
+          "role": "Softwareingenieur",
+          "image": "imageBlakeReid"
+        },
+        {
+          "name": "Jeffrey Webb",
+          "role": "UX/UI-Designer",
+          "image": "imageJeffreyWebb"
+        },
+        {
+          "name": "Benjamin Russel",
+          "role": "Softwareingenieur, Praktikant",
+          "image": "imageBenjaminRussel"
+        }
+      ]
+    },
+    "blogSection": {
+      "title": "Aus dem Blog",
+      "intro": "Unser Team erfahrener Designer und Entwickler hat nur eines im Sinn: an Ihren Ideen zu arbeiten, um Ihren Nutzern weltweit ein Lächeln ins Gesicht zu zaubern. Von der Durchführung von Brand Sprints bis hin zu UX-Design."
+    }
+  },
+  "blog": {
+    "metadata": {
+      "title": "Blog",
+      "description": "Bleiben Sie auf dem Laufenden mit den neuesten Nachrichten, Artikeln und Erkenntnissen unseres Expertenteams."
+    },
+    "intro": {
+      "eyebrow": "Blog",
+      "title": "Die neuesten Artikel und Nachrichten",
+      "description": "Bleiben Sie informiert über die neuesten Branchennachrichten, während unsere Marketingteams neue Wege finden, alte CSS-Tricks-Artikel wiederzuverwenden."
+    },
+    "articles": [
+      {
+        "title": "Die Zukunft des E-Commerce",
+        "description": "Entdecken Sie, wie sich die E-Commerce-Landschaft entwickelt und welche Trends in den kommenden Jahren zu beachten sind.",
+        "image": "imageEcommerce",
+        "author": "Hamza Ellouizi",
+        "date": "12. Mai 2021"
+      },
+      {
+        "title": "Die Kraft von Designsystemen",
+        "description": "Erfahren Sie, wie Designsysteme Ihren Designprozess optimieren und ein konsistenteres Benutzererlebnis schaffen können.",
+        "image": "imageDesignSystems",
+        "author": "Leonard Krasner",
+        "date": "28. April 2021"
+      },
+      {
+        "title": "Der Aufstieg der Fernarbeit",
+        "description": "Entdecken Sie die Vorteile und Herausforderungen der Fernarbeit und wie Sie eine erfolgreiche Remote-Arbeitskultur schaffen können.",
+        "image": "imageRemoteWork",
+        "author": "Ibrahim Adlani",
+        "date": "14. April 2021"
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Unser Prozess",
+    "title": "So arbeiten wir",
+    "description": "Wir glauben an Effizienz und daran, unsere Ressourcen zu maximieren, um unseren Kunden den bestmöglichen Mehrwert zu bieten. Der Hauptweg, dies zu erreichen, besteht darin, die gleichen fünf Projekte wiederzuverwenden, die wir in den letzten zehn Jahren entwickelt haben.",
+    "discover": {
+      "index": "01",
+      "title": "Entdecken",
+      "paragraphs": [
+        "Wir arbeiten eng mit unseren Kunden zusammen, um ihre Bedürfnisse und Ziele zu verstehen, und tauchen in ihren Arbeitsalltag ein, um zu erkennen, was ihr Geschäft antreibt.",
+        "Unser Team von Privatdetektiven begleitet mehrere Wochen lang die Geschäftsführer, während sich unsere Account Manager darauf konzentrieren, deren Abfall zu durchsuchen. Unsere leitenden Sicherheitsexperten führen anschließend Social-Engineering-Angriffe durch, um Zugang zu deren Geschäftskonten zu erhalten – und übergeben diese Informationen an unser forensisches Buchhaltungsteam.",
+        "Sobald die vollständige Prüfung abgeschlossen ist, legen wir einen umfassenden Plan vor und, was noch wichtiger ist, ein Budget."
+      ],
+      "phases": [
+        "Detaillierte Fragebögen",
+        "Machbarkeitsstudien",
+        "Blutproben",
+        "Mitarbeiterbefragungen",
+        "Machbarkeitsnachweise",
+        "Forensische Prüfung"
+      ]
+    },
+    "build": {
+      "index": "02",
+      "title": "Erstellen",
+      "paragraphs": [
+        "Basierend auf der Entdeckungsphase entwickeln wir einen umfassenden Fahrplan für jedes Produkt und beginnen mit der Umsetzung. Dieser Fahrplan ist ein verschlungenes Geflecht aus technischem Kauderwelsch, das darauf ausgelegt ist, das Projekt so lange wie möglich in die Länge zu ziehen.",
+        "Jedem Kunden wird ein Key Account Manager zugewiesen, der die Kommunikationswege offen hält und den tatsächlichen Fortschritt des Projekts verschleiert. Er fungiert als Puffer zwischen dem ständigen Nörgeln des Kunden und dem Entwicklungsteam, das eifrig in Open-Source-Projekten nach wiederverwendbarem Code sucht.",
+        "Unsere Account Manager sind darauf geschult, auf Kunden-E-Mails erst nach 21 Uhr und mehrere Tage nach der ersten Nachricht zu antworten. Dies verstärkt den Eindruck, dass wir sehr beschäftigt sind, und entmutigt Kunden, Änderungen anzufordern."
+      ],
+      "phases": [
+        {
+          "title": "Tests",
+          "description": "Unsere Projekte verfügen stets über eine 100%ige Testabdeckung, was beeindruckend wäre, wenn unsere Tests nicht so durchlässig wie ein Sieb wären."
+        },
+        {
+          "title": "Infrastruktur",
+          "description": "Um Zuverlässigkeit zu gewährleisten, verwenden wir ausschließlich die besten Digital Ocean Droplets, die man für 4 $ pro Monat erwerben kann."
+        },
+        {
+          "title": "Support",
+          "description": "Da wir die API-Schlüssel für jeden kritischen Service, den Ihr Unternehmen nutzt, besitzen, können Sie von uns lebenslangen Support und fortlaufende Rechnungen erwarten."
+        },
+        {
+          "title": "Support",
+          "description": "Da wir die API-Schlüssel für jeden kritischen Service, den Ihr Unternehmen nutzt, besitzen, können Sie von uns lebenslangen Support und fortlaufende Rechnungen erwarten."
+        }
+      ]
+    },
+    "deliver": {
+      "index": "03",
+      "title": "Liefern",
+      "paragraphs": [
+        "Etwa in der Mitte der Build-Phase verzögern wir jedes Projekt um 6 Wochen aufgrund geänderter Anforderungen. Dadurch können wir das Budget ein letztes Mal erhöhen, bevor das Projekt startet.",
+        "Obwohl wir größtenteils vorgefertigte Komponenten verwenden, findet der Großteil des Fortschritts in jedem Projekt in den letzten 24 Stunden statt. Die für jeden Kunden vorgesehene Entwicklungszeit wird tatsächlich dafür genutzt, Augmented-Reality-Demos zu erstellen, die in den sozialen Medien viral gehen.",
+        "Wir stellen sicher, dass die Hauptseiten der Website beim Start vollständig funktionsfähig sind – die Hilfeseiten werden selbstverständlich als Lorem-Ipsum-Hüllen bereitgestellt, die im Rahmen unseres überteuerten Wartungsvertrags aktualisiert werden."
+      ],
+      "quote": {
+        "text": "Das Studio lieferte seine Fortschrittsupdates so regelmäßig, dass wir fast dachten, sie wären automatisiert!",
+        "author": "Debra Fiscal, CEO von Unseal"
+      }
+    },
+    "values": {
+      "eyebrow": "Unsere Werte",
+      "title": "Zuverlässigkeit und Innovation in Einklang bringen",
+      "description": "Wir bemühen uns, an der Spitze neuer Trends und Technologien zu bleiben, während wir sie gleichzeitig ignorieren und das alte Rails-Projekt forken, mit dem wir uns wohlfühlen. Wir halten an unseren Kernwerten fest, um diese Entscheidung zu rechtfertigen.",
+      "values": [
+        {
+          "title": "Sorgfältig",
+          "description": "Der erste Teil jeder Partnerschaft besteht darin, unseren Designer dazu zu bringen, Ihr Logo in unsere Vorlage einzufügen. Der zweite Schritt ist, dass er die Farben auswählt."
+        },
+        {
+          "title": "Effizient",
+          "description": "Wir sind stolz darauf, niemals eine Frist zu verpassen, was einfach ist, da der Großteil der Arbeit bereits vor Jahren erledigt wurde."
+        },
+        {
+          "title": "Anpassungsfähig",
+          "description": "Jedes Unternehmen hat einzigartige Bedürfnisse, und unsere größte Herausforderung besteht darin, diese Bedürfnisse in etwas einzupassen, das wir bereits gebaut haben."
+        },
+        {
+          "title": "Ehrlich",
+          "description": "Wir sind in all unseren Prozessen transparent und verlassen uns darauf, dass unsere Kunden in Wirklichkeit nie etwas lesen."
+        },
+        {
+          "title": "Loyal",
+          "description": "Wir pflegen langfristige Beziehungen zu unseren Kunden, die über die reine Lieferung eines Produkts hinausgehen, und ermöglichen es uns, ihnen über Jahrzehnte hinweg Rechnungen zu stellen."
+        },
+        {
+          "title": "Innovativ",
+          "description": "Die technologische Landschaft entwickelt sich ständig weiter, und wir auch. Wir sind ständig auf der Suche nach neuen Open-Source-Projekten, die wir klonen können."
+        }
+      ]
     }
   }
 }

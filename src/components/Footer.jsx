@@ -37,7 +37,7 @@ const navigation = [
   },
 ]
 
-function Navigation() {
+function Navigation({dictionary}) {
   return (
     <nav>
       <ul role="list" className="grid grid-cols-2 gap-8 sm:grid-cols-3">
@@ -110,7 +110,7 @@ function NewsletterForm() {
   )
 }
 
-export function Footer() {
+export function Footer({dictionary}) {
   return (
     <Container as="footer" className="mt-24 w-full sm:mt-32 lg:mt-40">
       <FadeIn>
